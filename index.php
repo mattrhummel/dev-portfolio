@@ -35,13 +35,13 @@ get_header();
 
 			<h1><?php bloginfo('description'); ?></h1>
 
-			<p>Hi, I'm Matt. I'm a developer with 12 years experience living in Fredericksburg, VA. I'm trained in HTML,
-				CSS, Javascript, PHP, Git, Node, React, WordPress and Sharepoint</p>
+			<p><?php _e('Hi, I am Matt. I am a front-end web developer with 12 years experience living in Fredericksburg, VA. I am trained in HTML,
+				CSS, Javascript, PHP, Git, Node, React, WordPress and Sharepoint','dev-portfolio') ?> </p>
 
 			<div class="pill-container">
 
-				<a href= "<?php esc_html_e('https://matthummel.com/about/') ?>  " class="pill"><?php _e('View ') ?> View Projects</a>
-				<a href="contact.html" class="pill">Contact Matt</a>
+				<a href= "<?php esc_html_e('https://matthummel.com/about/') ?>  " class="pill"><?php _e('View Projects', 'dev-portfolio') ?> </a>
+				<a href="<?php esc_html_e('https://matthummel.com/contact/') ?>  " class="pill"><?php _e('Contact Matt', 'dev-portfolio') ?> </a>
 
 			</div>
 
@@ -65,8 +65,8 @@ get_header();
 	<div class="container-block">
 
 		<header class="text-center">
-			<h1>Latest Post</h1>
-			<h2 class="subheading">My most recent post from my Dev Journal blog.</h2>
+			<h1><?php _e('Latest Post', 'dev-portfolio') ?></h1>
+			<h2 class="subheading"><?php _e('My most recent post from my Dev Journal blog.', 'dev-portfolio') ?></h2>
 		</header>
 
 		<div class="card-container">
