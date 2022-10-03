@@ -27,8 +27,8 @@ get_header();
 
 
          <section class="light-background">
-            <div class="container">
-                    <div class="col padding-right-60 ">
+            <div class="container section-content">
+                    <div class="col padding-right-60">
                         <?php the_content(); ?>      
                     </div>
 
