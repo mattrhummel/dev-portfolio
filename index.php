@@ -48,7 +48,7 @@ get_header();
 		</div>
 
 		<div class="col">
-			<img src="http://localhost:8888/dev-portfolio/wp-content/uploads/2022/10/matt-hummel.jpeg"
+			<img src="https://matthummel.com/wp-content/uploads/2022/10/matt-hummel.jpeg"
 				alt="matt hummel">
 		</div>
 
