@@ -27,6 +27,7 @@ get_header();
 
 
          <section class="light-background">
+            <div class="container">
                     <div class="col padding-right-60 ">
                         <?php the_content(); ?>      
                     </div>
@@ -37,6 +38,7 @@ get_header();
                         <p><i class="fa fa-envelope"></i><a href="mailto:matt@matthummel.com">matt@matthummel.com</a></p>
                     </div>
                 </div>  
+            </div>
         </section>
         
 <?php 
