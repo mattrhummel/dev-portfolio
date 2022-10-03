@@ -1,0 +1,38 @@
+
+/*Form Styles*/
+form {
+    position: relative;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #979797;
+}
+
+input.form-button {
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    padding: 10px 40px;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12spx;
+    margin-bottom: .5em;
+}

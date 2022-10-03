@@ -1,0 +1,42 @@
+{
+  "name": "codecademy-portfolio-project",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattrhummel/codecademy-portfolio-project.git"
+  },
+  "author": "Matt Hummel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattrhummel/codecademy-portfolio-project/issues"
+  },
+  "homepage": "https://github.com/mattrhummel/codecademy-portfolio-project#readme",
+  "dependencies": {
+    "autoprefixer": "^10.4.11",
+    "browser-sync": "^2.27.10",
+    "cssnano": "^5.1.13",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sourcemaps": "^3.0.0",
+    "live-server": "^1.2.2",
+    "react-router-dom": "^6.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.4.16",
+    "sass": "^1.54.9"
+  }
+}
