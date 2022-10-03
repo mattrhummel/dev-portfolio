@@ -44,7 +44,7 @@ get_header();
 			</div>
 
 			<div class="blue-background light-text">
-<div class="container-block">
+				<div class="container-block">
 
 				<?php 
 				
