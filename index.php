@@ -22,6 +22,13 @@ get_header();
 				?>
 
 <header class="hero">
+
+		<div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+        </div>
+
 	<div class="container-hero spacearound ">
 
 		<div class="col">
@@ -33,7 +40,7 @@ get_header();
 
 			<div class="pill-container">
 
-				<a href="projects.html" class="pill">View Projects</a>
+				<a href= "<?php esc_html_e('https://matthummel.com/about/') ?>  " class="pill"><?php _e('View ') ?> View Projects</a>
 				<a href="contact.html" class="pill">Contact Matt</a>
 
 			</div>
@@ -68,6 +75,7 @@ get_header();
         'post_type' => 'post',
         'post_status' => 'publish',
 		'posts_per_page' => 3,
+
     
 );
 
