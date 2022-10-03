@@ -33,6 +33,9 @@ get_header();
                     </div>
 
                     <div class="col">
+                        <h2><?php _e('I would love to hear from you!', 'dev_portfolio') ?></h2>
+                        <p><?php _e('Give me a call, send me and email, or use the form', 'dev_portfolio') ?></p>
+                        <p><?php _e('I am currently accepting new work', 'dev_portfolio') ?></p>
 						<?php the_post_thumbnail(); ?>
                         <p><i class="fa fa-phone"></i><a href="tel:15407067647"><?php _e(' (540) 706- 7647') ?></a></p>
                         <p><i class="fa fa-envelope"></i><a href="mailto:matt@matthummel.com"> matt@matthummel.com</a></p>
