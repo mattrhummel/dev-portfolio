@@ -34,8 +34,8 @@ get_header();
 
                     <div class="col">
 						<?php the_post_thumbnail(); ?>
-                        <p><i class="fa fa-phone"></i><a href="tel:15407067647"><?php _e('(540) 706- 7647') ?></a></p>
-                        <p><i class="fa fa-envelope"></i><a href="mailto:matt@matthummel.com">matt@matthummel.com</a></p>
+                        <p><i class="fa fa-phone"></i><a href="tel:15407067647"><?php _e(' (540) 706- 7647') ?></a></p>
+                        <p><i class="fa fa-envelope"></i><a href="mailto:matt@matthummel.com"> matt@matthummel.com</a></p>
                     </div>
                 </div>  
             </div>
