@@ -33,7 +33,7 @@ get_header();
 
 		<div class="col">
 
-			<h1><?php bloginfo('description'); ?></h1>
+			<h1><?php _e('Front-End Web Developer', 'dev-portfolio') ?></h1>
 
 			<p><?php _e('Hi, I am Matt. I am a front-end web developer with 12 years experience living in Fredericksburg, VA. I am trained in HTML,
 				CSS, Javascript, PHP, Git, Node, React, WordPress and Sharepoint','dev-portfolio') ?> </p>
