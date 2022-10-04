@@ -9,7 +9,9 @@ input,
 textarea {
     display: block;
 }
-
+input, textarea {
+    padding:10px;
+}
 textarea {
     width: 100%;
     border-radius: 10px;
