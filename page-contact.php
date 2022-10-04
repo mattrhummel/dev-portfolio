@@ -30,7 +30,7 @@ get_header();
             <div class="container section-content">
 
 
-            <div class="col">
+            <div class="col padding-right-60">
                         <h2><?php _e('I would love to hear from you!', 'dev_portfolio') ?></h2>
                         <p><?php _e('Give me a call, send me an email, or use the form.', 'dev_portfolio') ?></p>
                         <p><?php _e('I am currently accepting new work.', 'dev_portfolio') ?></p>
