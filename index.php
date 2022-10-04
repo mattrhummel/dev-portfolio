@@ -33,14 +33,12 @@ get_header();
 
 		<div class="col">
 
-			<h1><?php _e('Front-End Web Developer', 'dev-portfolio') ?></h1>
+			<h1><?php _e('Front-End Developer in Fredericksburg, VA', 'dev-portfolio') ?></h1>
 
-			<p><?php _e('Hi, I am Matt. I am a front-end web developer with 12 years experience living in Fredericksburg, VA. I am trained in HTML,
-				CSS, Javascript, PHP, Git, Node, React, WordPress and Sharepoint','dev-portfolio') ?> </p>
+			<p><?php _e('I am trained in HTML, CSS, Javascript and I specialize in WordPress Development','dev-portfolio') ?> </p>
 
 			<div class="pill-container">
 
-				<a href= "<?php esc_html_e('https://matthummel.com/category/projects/') ?>  " class="pill"><?php _e('View Projects', 'dev-portfolio') ?> </a>
 				<a href="<?php esc_html_e('https://matthummel.com/contact/') ?>  " class="pill"><?php _e('Contact Matt', 'dev-portfolio') ?> </a>
 
 			</div>
