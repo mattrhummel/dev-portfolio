@@ -35,7 +35,7 @@ get_header();
 
 			<h1><?php _e('Front-End Developer in Fredericksburg, VA', 'dev-portfolio') ?></h1>
 
-			<p><?php _e('I am trained in HTML, CSS, Javascript and I specialize in WordPress Development','dev-portfolio') ?> </p>
+			<p><?php _e('Hello, I am Matt and I am trained in HTML, CSS, Javascript and I specialize in WordPress Development','dev-portfolio') ?> </p>
 
 			<div class="pill-container">
 
