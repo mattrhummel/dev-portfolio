@@ -23,6 +23,7 @@
 
   gtag('config', 'G-V9718KN95J');
 </script>
+<title><?php bloginfo('name');?></title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -33,7 +34,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
-    <title>Matt Hummels Online Portfolio</title>
 </head>
 
 <body <?php body_class(); ?>>
