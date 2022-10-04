@@ -39,7 +39,7 @@ get_header();
                         <p><i class="fa fa-envelope"></i><a href="mailto:matt@matthummel.com"> matt@matthummel.com</a></p>
                     </div>
 
-                    <div class="col">
+                    <div class="col-50">
                         <?php the_content(); ?>      
                     </div>
                 </div>  
