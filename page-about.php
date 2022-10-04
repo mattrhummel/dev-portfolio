@@ -28,7 +28,7 @@ get_header();
             </div>
          </header>
 
-		 <section class="row light-background">
+		 <section class="light-background">
             <div class="container section-content spacebetween">
                     <div class="col padding-right-60 ">
                         <?php the_content(); ?>      

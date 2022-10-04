@@ -1,12 +1,14 @@
 .container {
     display: block;
-    padding: 60px 40px;
+    padding: 60px 10px;
 
     @media (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
         width: 66%;
+        padding: 60px 20px;
+
     }
 
     @media (min-width: 992px) {
@@ -25,27 +27,6 @@
         padding: 0;
     }
 
-}
-
-.container-hero {
-    display: grid;
-    grid-template-columns: auto;
-    padding: 0 20px;
-
-    @media (min-width: 576px) {
-        grid-template-columns: 75% 25%;
-    }
-
-    @media (min-width:768px) {
-        grid-template-columns: 65% 35%;
-        column-gap: 0;
-        row-gap: 210px;
-    }
-
-    @media (min-width: 992px) {
-        grid-template-columns: auto auto;
-
-    }
 }
 
 .container-block {
@@ -113,8 +94,18 @@
         width: 25%;
     }
 }
+.flex-col {
+    display: block;
+    width: 100%;
+}
+@media (min-width: 768px) {
+.flex-col {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+}
 
-
+}
 .flexstart {
     justify-content: flex-start;
 }
