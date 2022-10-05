@@ -83,7 +83,7 @@
     @media (min-width:768px) {
    
             display: flex;
-            width: 960px;
+            width: 100%;
             margin: auto;
   
     }
@@ -91,7 +91,7 @@
       
             flex-wrap: unset;
             margin: 0 auto;
-            width: 100%;
+            width: 72%;
             padding: 80px 40px;
         
     }
@@ -102,21 +102,36 @@
     .attachment-post-thumbnail {
         width: 100%;
         height: auto;
+
+        @media (min-width:768px) {
+
+            width: 100%;
+        }
+
+        @media (min-width: 992px){
+            width: 100%;
+        }
+    }
+
+    .col {
+        width: 100%;
+        @media (min-width:768px) {
+
+            width: 50%;
+
+        }
+        @media (min-width: 992px){
+        	width: 50%;
+        }
     }
 }
 
-
-
-
-.col {
-    padding: 0;
-    vertical-align: top;
-}
 
 .col {
     width: auto;
     display: inline-block;
     padding: 0 10px;
+    vertical-align: top;
 }
 
 @media (min-width: 768px) {
