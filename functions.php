@@ -141,6 +141,12 @@ function dev_portfolio_widgets_init() {
 }
 add_action( 'widgets_init', 'dev_portfolio_widgets_init' );
 
+
+function wpb_remove_version() {
+	return '';
+	}
+	add_filter('the_generator', 'wpb_remove_version');
+	
 /**
  * Enqueue scripts and styles.
  */
