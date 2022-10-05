@@ -29,7 +29,7 @@ get_header();
            <div class="wave"></div>
         </div>
 
-		<div class="container section-content spacebetween">
+	<div class="container-hero spacearound ">
 
 		<div class="col">
 

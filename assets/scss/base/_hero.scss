@@ -7,8 +7,7 @@
     height: calc(100% - 40px);
     /* 100px is the height of the navbar */
     width: auto;
-    margin: 0 auto;
-    padding: 40px 40px 40px 0;
+    padding: 40px 0;
     background: linear-gradient(315deg,
             rgba(2, 48, 71) 3%,
             rgb(33, 158, 188) 38%,
@@ -17,6 +16,8 @@
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
+    text-align: center;
+    display: block;
 
     @keyframes gradient {
         0% {
@@ -80,39 +81,35 @@
         }
     }
 
+    @media (min-width: 576px){
+        text-align: center;
+    }
 
     @media (min-width:768px) {
-        padding: 0 40px;
-        height: 100vh;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
+        text-align: left;
         margin: auto;
-        font-size: 2.4vh;
     }
 
     @media (min-width: 992px) {
-        padding: 0 40px;
 
-        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin: auto;
+        padding: 80px 40px;
 
     }
 
     h1 {
-        font-size: 3.2em;
-        line-height: 1em;
-        margin-bottom: 20px;
         color: $white;
 
-        @media (min-width:768px) {
-            font-size: 4em;
-        }
-
-        @media (min-width: 992px) {
-            font-size: 3.5em;
-        }
-
+  
     }
 
 
@@ -123,7 +120,7 @@
         color: $white;
 
         @media (min-width:768px) {
-            font-size: 3.4vh;
+            font-size: 2vh;
             padding: 10px 0 0 4px;
 
         }
@@ -136,8 +133,25 @@
     }
 
     img {
-        width: 100%;
+        width: 50%;
         height: auto;
         border-radius: 50%;
+        margin: 0 auto;
+
+        @media (min-width: 576px) {
+            width: 50%;
+            height: auto;
+        }
+
+        @media (min-width:768px) {
+            width: 200px;
+            height:200px;
+        }
+
+        @media (min-width: 992px){
+        	width: 300px;
+            height:300px;
+        }
+    
     }
 }
