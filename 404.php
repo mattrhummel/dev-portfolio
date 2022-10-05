@@ -10,12 +10,20 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dev-portfolio' ); ?></h1>
-			</header><!-- .page-header -->
+
+		<header class="page-banner">
+                <div class="container-block">
+                	<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dev-portfolio' ); ?></h1>
+                </div>
+         </header>
+
+
+         <section class="light-background">
+            <div class="container section-content">
+
+
+            <div class="col padding-right-60">
 
 			<div class="page-content">
 				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'dev-portfolio' ); ?></p>
@@ -25,6 +33,11 @@ get_header();
 
 					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
+
+			</div>
+			</div>
+
+            <div class="col padding-right-60">
 
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'dev-portfolio' ); ?></h2>
@@ -52,9 +65,7 @@ get_header();
 					?>
 
 			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
+						</div>
+		 </section>
 <?php
 get_footer();
