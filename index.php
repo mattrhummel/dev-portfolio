@@ -40,7 +40,6 @@ get_header();
 			<div class="pill-container">
 
 				<a href="<?php esc_html_e('https://matthummel.com/contact/') ?>  " class="pill"><?php _e('Contact Matt', 'dev-portfolio') ?> </a>
-
 			</div>
 
 		</div>
