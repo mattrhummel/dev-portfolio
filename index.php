@@ -148,6 +148,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
             } ?>
 
 				<h3><?php the_title(); ?></h3>
+				<p><?php the_excerpt(); ?></p>
 
 				<a href="<?php echo get_the_permalink()?>" class="button">Read More</a>
 
@@ -156,7 +157,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 					<?php dev_portfolio_entry_footer(); ?>
 				</footer><!-- .entry-footer -->
 
-
+      
 			</div>
 
 			<?php
