@@ -28,7 +28,7 @@ get_header();
 </header>
 
 
-<section class="light-background section-spacing-top section-spacing-bottom">
+<section class="light-background section-spacing-top section-spacing">
 
     <div class="container-block">
 

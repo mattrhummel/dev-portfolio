@@ -28,7 +28,7 @@ get_header();
             </div>
          </header>
 
-		 <section class="light-background">
+		 <section class="light-background section-spacing">
             <div class="container-block">
                     
                         <?php the_content(); ?>   
