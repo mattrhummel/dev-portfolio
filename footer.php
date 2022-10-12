@@ -14,16 +14,16 @@
 
 <footer>
 
-        <section class="orange-background ">
+        <section class="gray-background">
 
                 <div class="container spacebetween">
-                        <div class="col-75">
-                                <h3><?php _e('I am currently accepting work on UpWork.  Need help with a project I would love to hear from you.', 'dev-portfolio') ?>
+                        <div class="col">
+                                <h3><?php _e(' Need help with a project? I would love to hear from you.', 'dev-portfolio') ?>
                                 </h3>
                         </div>
                         <div class="col">
-                                <a href="<?php esc_html_e('https://www.upwork.com/freelancers/matthummel') ?> "
-                                        class="button"><?php _e('Hire Me', 'dev-portfolio') ?> </a>
+                                <a href="<?php esc_html_e('https://matthummel.com/contact/') ?> "
+                                        class="button"><?php _e('Get In Touch!', 'dev-portfolio') ?> </a>
                         </div>
                 </div>
                 </div>
