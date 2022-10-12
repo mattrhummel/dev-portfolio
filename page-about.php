@@ -29,7 +29,7 @@ get_header();
          </header>
 
 		 <section class="light-background">
-            <div class="container section-content spacebetween">
+            <div class="container-block">
                     
                         <?php the_content(); ?>   
                     
