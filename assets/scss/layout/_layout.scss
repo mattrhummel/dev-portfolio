@@ -149,10 +149,28 @@
     }
 }
 .section-spacing-top {
-    padding:80px 0 0 0;
+    padding:40px 0 0 0;
+
+    @media (min-width:768px) 
+     {
+            padding:60px 0 0 0;
+    }
+
+    @media (min-width: 992px){
+        padding:80px 0 0 0;
+    }
+
 }
 .section-spacing-bottom {
-    padding:0 0 80px 0;
+    padding:0 0 40px 0;
+
+    @media (min-width:768px) {
+        padding:0 0 60px 0;
+    }
+
+    @media (min-width: 992px){
+        padding:0 0 80px 0;
+    }
 }
 .flexstart {
     justify-content: flex-start;
@@ -240,7 +258,17 @@
 }
 
 .section-spacing {
-    padding:80px 0;
+    padding:40px 0; 
+
+    @media (min-width:768px) {
+        padding:60px 0; 
+
+    }
+
+    @media (min-width: 992px){
+        padding:80px 0;
+    }
+
 }
 
 
