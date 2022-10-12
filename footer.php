@@ -23,7 +23,7 @@
                         </div>
                         <div class="col">
                                 <a href="<?php esc_html_e('https://matthummel.com/contact/') ?> "
-                                        class="button"><?php _e('Contact Me!', 'dev-portfolio') ?> </a>
+                                        class="button"><?php _e('Contact Me', 'dev-portfolio') ?> </a>
                         </div>
                 </div>
                 </div>

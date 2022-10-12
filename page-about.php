@@ -31,45 +31,19 @@ get_header();
 		 <section class="light-background">
             <div class="container section-content spacebetween">
                     <div class="col">
-                        <?php the_content(); ?>      
+                        <?php the_content(); ?>   
+                        
+
                     </div>
 
                     <div class="col">
 						<?php the_post_thumbnail(); ?>
                     </div>
-                </div>    
+
+ 
+                </div>  
+          
         </section>
-
-        <section class="gray-background">
-            <div class="container-block">
-
-                    <div class="text-center">
-                    
-                        <h2>Skills</h2>
-                        
-						<p class="marb-spacing-40">These are a few of my technical skills and tools I have experience with. </p>
-                            
-
-                                <ul class="skills-list">
-                                    <li><i class="fa-2x fa-brands fa-html5" title="HTML5"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-css3-alt"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-square-js"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-github"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-node-js"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-accessible-icon"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-sketch"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-git"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-npm"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-windows"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-apple"></i></li>
-                                    <li><i class="fa-2x fa-brands fa-wordpress"></i></li>
-                                </ul>
-                         
-                    	</div>
-          		</div>
-          	</div>
-          </section>
-
 
 <?php
 get_footer();
