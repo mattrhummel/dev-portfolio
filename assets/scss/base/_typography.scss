@@ -13,8 +13,8 @@ h1 {
     }
 
     @media (min-width: 992px){
-      font-size: 4.4rem;
-      line-height: 5rem;
+      font-size: 3.8rem;
+      line-height: 3.8rem;
     }
 }
 
@@ -58,6 +58,9 @@ main p {
     line-height: 2rem;
 }
 
+main h1 {
+  margin-bottom: 20px;
+}
 main a {
     color: $secondary;
     text-decoration: nonef;
