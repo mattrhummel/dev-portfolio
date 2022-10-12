@@ -24,7 +24,7 @@ get_header();
                 </div>
          </header>
 
-		 <section class="light-background">
+		 <section class="light-background section-spacing">
 			
 		<div class="container-block">
 
@@ -45,17 +45,19 @@ if ( ! empty( $large_image_url[0] ) ) {
 } ?>
 
 <h3><?php the_title(); ?></h3>
-<p><?php the_excerpt(); ?></p>
-
-<time datetime="<?php echo get_the_date('y, m'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
-
-<a href="<?php echo get_the_permalink()?>" class="button">Read More</a>
-
 
 <footer class="entry-footer">
 	<?php dev_portfolio_entry_footer(); ?>
-</footer><!-- .entry-footer -->
+	<time datetime="<?php echo get_the_date('m, y'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
 
+ </footer><!-- .entry-footer -->
+
+
+
+
+<p><?php the_excerpt(); ?></p>
+
+<a href="<?php echo get_the_permalink()?>" class="button"><?php _e('Read More', 'dev-portfolio') ?></a>
 
 </div>
 
