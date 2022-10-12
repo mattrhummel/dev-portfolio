@@ -30,16 +30,9 @@ get_header();
 
 		 <section class="light-background">
             <div class="container section-content spacebetween">
-                    <div class="col">
+                    
                         <?php the_content(); ?>   
-                        
-
-                    </div>
-
-                    <div class="col">
-						<?php the_post_thumbnail(); ?>
-                    </div>
-
+                    
  
                 </div>  
           
