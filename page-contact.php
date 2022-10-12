@@ -26,7 +26,7 @@ get_header();
          </header>
 
 
-         <section class="light-background">
+         <section class="light-background section-spacing-bottom">
             <div class="container section-content">
 
 

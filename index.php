@@ -56,13 +56,12 @@ get_header();
 
 <?php endif; ?>
 
-<section class="light-background">
+<section class="light-background section-spacing-top">
 
 	<div class="container-block">
 
 		<header class="text-center">
-			<h1><?php _e('Projects', 'dev-portfolio') ?></h1>
-			<h2 class="subheading"><?php _e('My most recent projects', 'dev-portfolio') ?></h2>
+			<h1><?php _e('Latest Projects', 'dev-portfolio') ?></h1>
 		</header>
 
 		<div class="card-container">
@@ -92,16 +91,18 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 				<h3><?php the_title(); ?></h3>
 
-				<time datetime="<?php echo get_the_date('m, y'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
+				<footer class="entry-footer">
+					<?php dev_portfolio_entry_footer(); ?>
+					<time datetime="<?php echo get_the_date('m, y'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
+
+				 </footer><!-- .entry-footer -->
+
+
+
 
 				<p><?php the_excerpt(); ?></p>
 
-				<a href="<?php echo get_the_permalink()?>" class="button">Read More</a>
-
-				 <footer class="entry-footer">
-					<?php dev_portfolio_entry_footer(); ?>
-				 </footer><!-- .entry-footer -->
-
+				<a href="<?php echo get_the_permalink()?>" class="button"><?php _e('Read More', 'dev-portfolio') ?></a>
 
 			</div>
 
@@ -115,13 +116,12 @@ while ( $loop->have_posts() ) : $loop->the_post();
 </section>
 
 
-<section class="light-background">
+<section class="light-background section-spacing-bottom">
 
 	<div class="container-block">
 
 		<header class="text-center">
 			<h1><?php _e('Latest Post', 'dev-portfolio') ?></h1>
-			<h2 class="subheading"><?php _e('My most recent post from my Dev Journal blog.', 'dev-portfolio') ?></h2>
 		</header>
 
 		<div class="card-container">
@@ -150,16 +150,17 @@ while ( $loop->have_posts() ) : $loop->the_post();
             } ?>
 
 				<h3><?php the_title(); ?></h3>
-				<p><?php the_excerpt(); ?></p>
-				
-				<time datetime="<?php echo get_the_date('y, m'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
-
-				<a href="<?php echo get_the_permalink()?>" class="button">Read More</a>
-
 
 				<footer class="entry-footer">
 					<?php dev_portfolio_entry_footer(); ?>
+					<time datetime="<?php echo get_the_date('y, m'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
+
 				</footer><!-- .entry-footer -->
+
+				<p><?php the_excerpt(); ?></p>
+				
+				<a href="<?php echo get_the_permalink()?>" class="button">Read More</a>
+
 
       
 			</div>

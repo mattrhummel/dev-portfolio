@@ -72,7 +72,7 @@
 
     @media (min-width:768px) {
         width: 96%;
-        padding: 80px 20px;
+        padding: 40px 20px 40px 20px;
 
     }
 
@@ -82,7 +82,7 @@
 
 }
 .section-content {
-    padding: 80px 40px;
+    padding: 80px 40px 0 40px;
 
     @media (min-width:768px) {
    
@@ -96,7 +96,6 @@
             flex-wrap: unset;
             margin: 0 auto;
             width: 72%;
-            padding: 80px 40px;
         
     }
 
@@ -149,8 +148,12 @@
         width: 75%;
     }
 }
-
-
+.section-spacing-top {
+    padding:80px 0 0 0;
+}
+.section-spacing-bottom {
+    padding:0 0 80px 0;
+}
 .flexstart {
     justify-content: flex-start;
 }
@@ -235,3 +238,4 @@
         padding-right: 60px;
     }
 }
+

@@ -101,12 +101,10 @@
         -webkit-box-shadow: 1px 6px 17px -1px rgba(0,0,0,0.34);
         -moz-box-shadow: 1px 6px 17px -1px rgba(0,0,0,0.34);
         border-radius: 5px;
-        flex: 3;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
         position: relative;
+        padding-bottom: 20px;
         
         img {
             width: 100%;
@@ -114,6 +112,7 @@
             margin-bottom: 20px;
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
+            justify-self: start;
         }
         h3 {
             margin: 20px 0;
@@ -129,29 +128,21 @@
             }
         }
         a.button {
-            margin: 0 10px 20px 20px;
-           
+          margin-left: 18px;
         }
         p {
             padding: 0 20px;
         }
 
         time {
-            width: auto;
-            padding: 20px;
-            background-color: $primary;
-            color: $white;
-            border-top-left-radius: 5px;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        footer {
-            background-color: $gray;
-            padding: 20px 20px 30px 20px;
-            margin-top: 30px;
-            width: 100%;
+            padding:5px 0;
+            margin: 5px 0;
+            display: block;
 
+        }
+        footer.entry-footer {
+            padding: 0 20px;
+            width: 100%;
         }
         footer span.cat-links {
             line-height: 1.8rem;
