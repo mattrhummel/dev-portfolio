@@ -106,12 +106,14 @@
         justify-content: space-between;
         align-items: stretch;
         flex-wrap: wrap;
+        position: relative;
         
         img {
             width: 100%;
             height: auto;
             margin-bottom: 20px;
-            border-radius: 5px;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
         }
         h3 {
             margin: 20px 0;
@@ -132,6 +134,18 @@
         }
         p {
             padding: 0 20px;
+        }
+
+        time {
+            width: auto;
+            padding: 20px;
+            background-color: $secondary;
+            color: $white;
+            border-top-right-radius: 5px;
+            opacity: .8;
+            position: absolute;
+            right: 0;
+            top: 0;
         }
         footer {
             background-color: $gray;

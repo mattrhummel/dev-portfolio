@@ -63,7 +63,7 @@ main h1 {
 }
 main a {
     color: $secondary;
-    text-decoration: nonef;
+    text-decoration: none;
     &:hover {
         color: $yellow;
         text-decoration: underline;
