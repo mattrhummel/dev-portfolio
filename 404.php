@@ -14,6 +14,8 @@ get_header();
 
 		<header class="page-banner">
                 	<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dev-portfolio' ); ?></h1>
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'dev-portfolio' ); ?></p>
+
         </header>
 
 
@@ -24,7 +26,6 @@ get_header();
             <div class="col padding-right-60">
 
 			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'dev-portfolio' ); ?></p>
 
 					<?php
 					get_search_form();
