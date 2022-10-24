@@ -15,11 +15,11 @@ get_header();
 
 
 		<header class="page-banner">
-				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
+				<h1><?php
+				the_archive_title?></h1>
 				?>
-                   <?php the_archive_description( '<div class="archive-description">', '</div>' );
-				 ?>
+                  <p>	 <?php the_archive_description( '<div class="archive-description">', '</div>' );
+				 ?></p>
          </header>
 
 		 <section class="light-background section-spacing">
