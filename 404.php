@@ -14,11 +14,11 @@ get_header();
 
 		<header class="page-banner">
                 	<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dev-portfolio' ); ?></h1>
-         </header>
+        </header>
 
 
          <section class="light-background">
-            <div class="container section-content">
+            <div class="container">
 
 
             <div class="col padding-right-60">
