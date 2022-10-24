@@ -30,12 +30,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="profile" href="https://gmpg.org/xfn/11" />
     <?php wp_head(); ?>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet" />
 </head>
 
 <body <?php body_class(); ?>>
@@ -44,7 +39,6 @@
 
     <header class="nav-container">
 
-        <div class="container-full spacebetween">
 
             <?php
 			the_custom_logo(); ?>
@@ -65,12 +59,12 @@
             <ul class="social-links">
                 <li>
                     <a href="https://github.com/mattrhummel" class="dark-background" title="Github">
-                        <i class="fa-brands fa-github light-text"></i>
+                        <i class="fa-brands fa-github-alt light-text"></i>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/mattrhummel/" class="dark-background" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin light-text"></i>
+                        <i class="fa-brands fa-linkedin-in light-text"></i>
                     </a>
                 </li>
                 <li>
@@ -80,7 +74,6 @@
                 </li>
             </ul>
 
-        </div>
 
     </header>
 

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mattrhummel/codecademy-portfolio-project#readme",
   "dependencies": {
+    "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.11",
     "browser-sync": "^2.27.10",
     "cssnano": "^5.1.13",

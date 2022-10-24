@@ -12,9 +12,7 @@
 ?>
 
 
-<section class="contact-section">
-
-        <div class="gray-background">
+<section class="contact-section grey-background">
 
         <div class="container spacebetween">
                 <div class="col-75">
@@ -25,7 +23,6 @@
                         <a href="<?php esc_html_e('https://matthummel.com/contact/') ?> "
                                 class="button"><?php _e('Contact Me', 'dev-portfolio') ?> </a>
                 </div>
-        </div>
         </div>
 
 </section>

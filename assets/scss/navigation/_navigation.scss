@@ -1,19 +1,22 @@
 .nav-container {
-    padding:20px 10px 40px 10px;
+    padding: 20px;
     background: $primary;
     display: block;
-    h1 {
+    
+
+    @media (min-width:768px) {
+ 
+        display: flex;
+        justify-content: space-between;
+    
+}
+
+h1 {
         text-align: center;
     }
 }
 
-@media (min-width:768px) {
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
-    }
-}
+
 h1 {
     margin: 20px auto;
     @media (min-width:768px) {

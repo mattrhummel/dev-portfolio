@@ -10,22 +10,20 @@
 get_header();
 ?>
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
 		<?php
 		while ( have_posts() ) :
 			the_post(); ?>
 
-		<header class="page-banner">
-				<div class="container-block">
-					<?php the_title('<h1>', '</h1>', 'dev-portfolio'); ?>
-					<?php dev_portfolio_entry_footer(); ?>
-				</div>
-         </header>
+		 <header class="page-banner">
+                <h1><?php the_title(); ?></h1>
+				<p>				<?php dev_portfolio_entry_footer(); ?></p>
+        </header>
 
-<div class="light-background">
-<div class="container-block">
 
+
+<section class="light-background">
+
+		<div class="container wrap">
 
 			<div class="post-content">
 			<?php if ( has_post_thumbnail() ) {
@@ -41,10 +39,10 @@ get_header();
 
 			</div>
 
-			</div>
+
 
 			<div class="blue-background light-text">
-				<div class="container-block">
+				<div class="container center">
 
 				<?php 
 				
@@ -59,9 +57,8 @@ get_header();
 
 				endwhile; // End of the loop.
 				?>
-</div>
+				</div>
 			</div>
-	</article><!-- #main -->
-
+			</section>
 <?php
 get_footer();

@@ -14,8 +14,6 @@
 
 get_header();
 ?>
-
-
 <?php
 
 			if ( is_home() && is_front_page() ) :
@@ -23,32 +21,51 @@ get_header();
 
 <header class="hero">
 
-		<div>
-           <div class="wave"></div>
-           <div class="wave"></div>
-           <div class="wave"></div>
-        </div>
+	<div class="hero-content">
 
-	<div class="container-hero spacearound ">
+		<h2><?php _e('Self-tought, passionate front-end web developer.','dev-portfolio') ?></h2>
 
-		<div class="col">
+		<p><?php _e('Hi I am Matt, a Front-End Developer in Fredericksburg, VA. Below is a brief snapshot about my experience', 'dev-portfolio') ?></p>
 
-			<h1><?php _e('Front-End Developer in Fredericksburg, VA', 'dev-portfolio') ?></h1>
+		<div class="card-container">
 
-			<p><?php _e('Hello, I am Matt and I am a web developer specializing in WordPress Development','dev-portfolio') ?> </p>
+			<div class="card">
 
-			<div class="pill-container">
+			<i class="fa-sharp fa-solid fa-code-simple fa-6x"></i>
 
-				<a href="<?php esc_html_e('https://matthummel.com/contact/') ?>  " class="pill"><?php _e('Contact Matt', 'dev-portfolio') ?> </a>
+				<h3>Front-End Development</h3>
+
+				<p class="small">
+					Build responsive and fast loading websites using HTML, CSS, SASS and Javascript.
+				</p>
+
+			</div>
+
+			<div class="card">
+
+			<i class="fa-brands fa-wordpress fa-6x"></i>
+
+				<h3>WordPress Development</h3>
+
+				<p class="small">
+					Create custom themes using PHP, mySQL, MAMP, Advanced Custom Fields and Underscore Starter Theme.
+				</p>
+
+			</div>
+
+			<div class="card">
+
+			<i class="fa-brands fa-accessible-icon fa-6x"></i>
+
+				<h3>Accessibility & SEO</h3>
+
+				<p class="small">
+					Ensuring websites can be accessed by all visitors, be found in search engines and measure their success using analytics.
+				</p>
+
 			</div>
 
 		</div>
-
-		<div class="col">
-			<img src="https://matthummel.com/wp-content/uploads/2022/10/matt-hummel.jpeg"
-				alt="matt hummel">
-		</div>
-
 
 	</div>
 
@@ -56,75 +73,64 @@ get_header();
 
 <?php endif; ?>
 
-<section class="light-background section-spacing-top">
+<section class="light-background row">
 
-	<div class="container-block">
+	<header class="text-center row-header">
+		<h1 class="headline" ><?php _e('Latest Projects', 'dev-portfolio') ?></h1>
+	</header>
 
-		<header class="text-center">
-			<h1><?php _e('Latest Projects', 'dev-portfolio') ?></h1>
-		</header>
 
-		<div class="card-container">
-
-	<?php $args = array(  
+		<?php $args = array(  
         'post_type' => 'projects',
         'post_status' => 'publish',
 		'posts_per_page' => 3,
 
-    
-);
+	);
 
 $loop = new WP_Query( $args ); 
     
 while ( $loop->have_posts() ) : $loop->the_post(); 
 
-             ?>
+?>
 
-			<div class="card">
+		<div class="project">
+ 
+				<div class="project-info">
 
-				<?php if ( has_post_thumbnail() ) {
-                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'normal' );
-                if ( ! empty( $large_image_url[0] ) ) {
-                    echo get_the_post_thumbnail( $post->ID, 'large' ); 
-                }
-            } ?>
+					<h3><a href="<?php echo get_the_permalink()?>"><?php the_title(); ?></a></h3>
 
-				<h3><?php the_title(); ?></h3>
+					<p><?php the_excerpt(); ?></p>
 
-				<footer class="entry-footer">
-					<?php dev_portfolio_entry_footer(); ?>
-					<time datetime="<?php echo get_the_date('m, y'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
+				</div>
 
-				 </footer><!-- .entry-footer -->
+				<div class="project-image">
+					<?php if ( has_post_thumbnail() ) {
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'normal' );
+						if ( ! empty( $large_image_url[0] ) ) {
+							echo get_the_post_thumbnail( $post->ID, 'large' ); 
+						}
+					} ?>
+				
+				</div>
 
-
-
-
-				<p><?php the_excerpt(); ?></p>
-
-				<a href="<?php echo get_the_permalink()?>" class="button"><?php _e('Read More', 'dev-portfolio') ?></a>
-
-			</div>
-
-			<?php
-            endwhile;
-            wp_reset_postdata();  
-            ?>
 		</div>
-	</div>
 
+
+
+		<?php
+				endwhile;
+				wp_reset_postdata();  
+            ?>
 </section>
 
 
-<section class="light-background section-spacing-bottom">
+<section class="light-background row">
 
-	<div class="container-block">
+	<header class="text-center row-header">
+		<h1><?php _e('Latest Post', 'dev-portfolio') ?></h1>
+	</header>
 
-		<header class="text-center">
-			<h1><?php _e('Latest Post', 'dev-portfolio') ?></h1>
-		</header>
-
-		<div class="card-container">
+<div class="card-container-full">
 
 			<?php $args = array(  
         'post_type' => 'post',
@@ -142,27 +148,17 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 			<div class="card">
 
-				<?php if ( has_post_thumbnail() ) {
-                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'normal' );
-                if ( ! empty( $large_image_url[0] ) ) {
-                    echo get_the_post_thumbnail( $post->ID, 'large' ); 
-                }
-            } ?>
-
-				<h3><?php the_title(); ?></h3>
+				<h3><a href="<?php echo get_the_permalink()?>"><?php the_title(); ?></a></h3>
 
 				<footer class="entry-footer">
 					<?php dev_portfolio_entry_footer(); ?>
-					<time datetime="<?php echo get_the_date('y, m'); ?>" itemprop="datePublished"><?php echo get_the_date(); ?></time>
+					<time datetime="<?php echo get_the_date('y, m'); ?>"
+						itemprop="datePublished"><?php echo get_the_date(); ?></time>
 
 				</footer><!-- .entry-footer -->
 
 				<p><?php the_excerpt(); ?></p>
-				
-				<a href="<?php echo get_the_permalink()?>" class="button">Read More</a>
 
-
-      
 			</div>
 
 			<?php
@@ -170,8 +166,6 @@ while ( $loop->have_posts() ) : $loop->the_post();
             wp_reset_postdata();  
             ?>
 		</div>
-	</div>
-
 </section>
 
 

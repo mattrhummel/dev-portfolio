@@ -15,27 +15,21 @@
  * 
  * @package dev-portfolio
  */
-
 get_header();
 ?>
+        <header class="page-banner">
+                <h1><?php the_title(); ?></h1>
+                <p><?php _e('Matt is a Front-end Developer based in Fredericksburg, Virginia', 'dev-portfolio') ?> </p>
+        </header>
 
+        <section class="light-background">
 
-		 <header class="page-banner">
-            <div class="container-block">
-                	<h1><?php the_title(); ?></h1>
-                    <p><?php _e('Matt is a Front-end Developer based in Fredericksburg, Virginia', 'dev-portfolio') ?> </p>
-                </div>
-            </div>
-         </header>
-
-		 <section class="light-background section-spacing">
-            <div class="container-block">
-                    
+                <div class="container wrap">
+                                
                         <?php the_content(); ?>   
+
+                </div>
                     
- 
-                </div>  
-          
         </section>
 
 <?php
