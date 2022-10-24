@@ -16,8 +16,8 @@ get_header();
 
 		<header class="page-banner">
 				<h1><?php
-				the_archive_title();?></h1>
-				?>
+				the_archive_title(); ?></h1>
+			
                   <p>	 <?php the_archive_description( '<div class="archive-description">', '</div>' );
 				 ?></p>
          </header>
