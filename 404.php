@@ -13,9 +13,7 @@ get_header();
 
 
 		<header class="page-banner">
-                <div class="container-block">
                 	<h1><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'dev-portfolio' ); ?></h1>
-                </div>
          </header>
 
 
