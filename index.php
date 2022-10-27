@@ -16,8 +16,9 @@ get_header();
 ?>
 <?php
 
-			if ( is_home() && is_front_page() ) :
-				?>
+	if ( is_home() && is_front_page() ) :
+
+?>
 
 <header class="hero">
 
@@ -100,6 +101,22 @@ while ( $loop->have_posts() ) : $loop->the_post();
 					<h3><a href="<?php echo get_the_permalink()?>"><?php the_title(); ?></a></h3>
 
 					<p><?php the_excerpt(); ?></p>
+
+
+					<?php if ( have_rows('project_tool') ) : ?>
+
+						<ul class="inline-lists">
+					
+						<?php while( have_rows('project_tool') ) : the_row(); ?>
+					
+							<li><?php the_sub_field('tool_used'); ?></li>
+					
+						<?php endwhile; ?>
+
+						</ul>
+					
+					<?php endif; ?>
+					
 
 				</div>
 

@@ -76,6 +76,22 @@ main a {
 main ul li {
   padding: 5px 0;
 }
+
+.inline-lists {
+
+padding: 0;
+margin: 10px 0;
+ 
+    li {  
+      display: inline-block; 
+      padding: 12px 10px;
+      border-radius: 10px;
+      background-color: $primary;
+      color: $white;
+      font-weight: bold;
+      }
+
+}
 table {
     margin: 0.3125em 0;
     th {
@@ -159,3 +175,5 @@ address {
     margin: 0 0 60px 0;
     padding: 0 10px;
 }
+
+
