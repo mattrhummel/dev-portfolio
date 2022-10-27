@@ -94,7 +94,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 ?>
 
-		<div class="project">
+		<article class="project">
  
 				<div class="project-info">
 
@@ -102,6 +102,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 					<p><?php the_excerpt(); ?></p>
 
+					<footer?>
 
 					<?php if ( have_rows('project_tool') ) : ?>
 
@@ -117,6 +118,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 					
 					<?php endif; ?>
 					
+					</footer>
 
 				</div>
 
@@ -130,7 +132,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 				
 				</div>
 
-		</div>
+		</article>
 
 
 
