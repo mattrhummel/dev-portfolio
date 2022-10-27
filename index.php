@@ -105,7 +105,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 					<?php if ( have_rows('project_tool') ) : ?>
 
-						<ul class="inline-lists">
+						<ul class="inline-pills">
 					
 						<?php while( have_rows('project_tool') ) : the_row(); ?>
 					
