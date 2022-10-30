@@ -80,6 +80,7 @@ get_header();
 		<h1 class="headline" ><?php _e('Latest Projects', 'dev-portfolio') ?></h1>
 	</header>
 
+	<div class="project-container">
 
 		<?php $args = array(  
         'post_type' => 'projects',
@@ -94,45 +95,48 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 ?>
 
-		<article class="project">
- 
-				<div class="project-info">
+<article class="project">
 
-					<h3><a href="<?php echo get_the_permalink()?>"><?php the_title(); ?></a></h3>
+<?php if ( has_post_thumbnail() ) {
+$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'normal' );
+if ( ! empty( $large_image_url[0] ) ) {
+ echo get_the_post_thumbnail( $post->ID, 'large' ); 
+}
+} ?>
 
-					<p><?php the_excerpt(); ?></p>
+<h3><?php the_title(); ?></h3>
 
-					<footer?>
+<p><?php the_excerpt(); ?></p>
 
-					<?php if ( have_rows('project_tool') ) : ?>
+<footer?>
 
-						<ul class="inline-pills">
-					
-						<?php while( have_rows('project_tool') ) : the_row(); ?>
-					
-							<li><?php the_sub_field('tool_used'); ?></li>
-					
-						<?php endwhile; ?>
+	<?php if ( have_rows('project_tool') ) : ?>
 
-						</ul>
-					
-					<?php endif; ?>
-					
-					</footer>
+	<ul class="inline-pills">
 
-				</div>
+		<?php while( have_rows('project_tool') ) : the_row(); ?>
 
-				<div class="project-image">
-					<?php if ( has_post_thumbnail() ) {
-						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'normal' );
-						if ( ! empty( $large_image_url[0] ) ) {
-							echo get_the_post_thumbnail( $post->ID, 'large' ); 
-						}
-					} ?>
-				
-				</div>
+		<li><?php the_sub_field('tool_used'); ?></li>
 
-		</article>
+		<?php endwhile; ?>
+
+	</ul>
+
+	<?php endif; ?>
+
+	<ul class="inline-list">
+		<li> <a href="https://mattrhummel.github.io/codeacademy-cheatsheet-project/">
+				<php ?>Visit Project
+			</a></li>
+		<li> <a href="https://github.com/mattrhummel/codeacademy-cheatsheet-project">
+				<php ?>View SourceCode
+			</a></li>
+	</ul>
+
+	</footer>
+
+</article>
+
 
 
 
@@ -140,6 +144,8 @@ while ( $loop->have_posts() ) : $loop->the_post();
 				endwhile;
 				wp_reset_postdata();  
             ?>
+
+	</div>
 </section>
 
 
