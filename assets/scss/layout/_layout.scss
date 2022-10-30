@@ -27,6 +27,7 @@
     display: block;
     width: 100%;
     max-width: 1140px;
+    padding: 0 80px;
 
     @media (min-width: 1200px){
    
@@ -34,6 +35,8 @@
     display: flex;
     align-items: flex-start;
     margin: auto;
+    flex-wrap: wrap;
+    padding: 0;
 
 
     }
@@ -43,7 +46,11 @@
     
          @media (min-width: 768px) {
             padding: 40px;
-            flex: 1;
+  
+    }
+
+    @media (min-width: 1200px){
+        flex: 1 0 50%;
     }
             img {
                 width: 100%;

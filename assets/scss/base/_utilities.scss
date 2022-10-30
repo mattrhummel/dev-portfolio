@@ -179,13 +179,12 @@
     }
 }
 .spacer {
-   padding: 80px;
+    margin: 80px auto;
+    
+        @media (min-width: 1200px){
+            margin: 80px auto;
 
-
-    @media (min-width: 1200px){
-        padding: 80px 0;
-
-    }
+        }
   
 }
 .card-container-full {
@@ -196,6 +195,7 @@
     width: 72%;
     justify-items: center;
     margin-bottom: 80px;
+    
     .card {
         border: 1px solid $gray;
         padding: 20px;
