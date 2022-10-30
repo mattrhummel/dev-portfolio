@@ -124,14 +124,27 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 	<?php endif; ?>
 
-	<ul class="inline-list">
-		<li> <a href="https://mattrhummel.github.io/codeacademy-cheatsheet-project/">
-				<php ?>Visit Project
-			</a></li>
-		<li> <a href="https://github.com/mattrhummel/codeacademy-cheatsheet-project">
-				<php ?>View SourceCode
-			</a></li>
-	</ul>
+			<ul class="inline-list">
+
+		<?php if ( get_field('project_url') ) : ?>
+
+			<li> <a href="<?php echo get_field('project_url'); ?>"> 
+					<php ?><?php _e('View Project', 'dev-portfolio') ?>
+				</a>
+			</li>
+
+		<?php endif; ?>
+
+		<?php if ( get_field('project_sourcecode_url') ) : ?>
+
+				<li> <a href="<?php echo get_field('field_name'); ?>"> 
+						<php ?><?php _e('View Project', 'dev-portfolio') ?>
+					</a>
+				</li>
+
+		<?php endif; ?>
+
+		</ul>
 
 	</footer>
 
