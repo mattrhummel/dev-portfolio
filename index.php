@@ -128,8 +128,8 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 		<?php if ( get_field('project_url') ) : ?>
 
-			<li> <a href="<?php echo get_field('project_url'); ?>"> 
-					<php ?><?php _e('View Project', 'dev-portfolio') ?>
+			<li> <a href="<?php echo get_field('project_url'); ?>" target="_blank"> 
+					<?php _e('View Project', 'dev-portfolio') ?>
 				</a>
 			</li>
 
@@ -137,8 +137,8 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 		<?php if ( get_field('project_sourcecode_url') ) : ?>
 
-				<li> <a href="<?php echo get_field('field_name'); ?>"> 
-						<php ?><?php _e('View Project', 'dev-portfolio') ?>
+				<li> <a href="<?php echo get_field('field_name'); ?>" target="_blank"> 
+						<?php _e('View Project', 'dev-portfolio') ?>
 					</a>
 				</li>
 
