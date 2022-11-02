@@ -67,11 +67,6 @@
                         <i class="fa-brands fa-linkedin-in light-text"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="https://twitter.com/mattrhummel" class="dark-background" title="LinkedIn">
-                        <i class="fa-brands fa-twitter light-text"></i>
-                    </a>
-                </li>
             </ul>
 
 
