@@ -170,7 +170,7 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 <div class="card-container-full">
 
-			<?php $args = array(  
+	<?php $args = array(  
         'post_type' => 'post',
         'post_status' => 'publish',
 		'posts_per_page' => 3,
@@ -188,6 +188,8 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 				<h3><a href="<?php echo get_the_permalink()?>"><?php the_title(); ?></a></h3>
 
+				<p><?php the_excerpt(); ?></p>
+
 				<footer class="entry-footer">
 					<?php dev_portfolio_entry_footer(); ?>
 					<time datetime="<?php echo get_the_date('y, m'); ?>"
@@ -195,7 +197,6 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 				</footer><!-- .entry-footer -->
 
-				<p><?php the_excerpt(); ?></p>
 
 			</div>
 

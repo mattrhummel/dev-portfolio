@@ -7,7 +7,7 @@
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: $primary;
+    background-color: $blue;
     padding: 15px 40px;
     display: inline-block;
     font-size: .8em;
@@ -17,6 +17,7 @@
 
     &:hover {
         background-color: $secondary;
+        color: $white;
     }
 
 }
@@ -78,10 +79,9 @@
 
 }
 .card-container {
-    display: grid;
+    display: flex;
     row-gap: 30px;
     width: 100%;
-    grid-template-columns: 100%;
 
     @media (min-width:768px) {
         column-gap: 20px;
@@ -101,7 +101,7 @@
         flex-direction: column;
         align-items: flex-start;
         position: relative;
-        padding-bottom: 20px;
+        background-color: $gray;
         
         img {
             width: 100%;
@@ -190,16 +190,20 @@
 .card-container-full {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 40px;
+    row-gap: 30px;
     margin: auto;
     width: 72%;
     justify-items: center;
     margin-bottom: 80px;
-    
+
     .card {
         border: 1px solid $gray;
-        padding: 20px;
+        padding: 20px 20px 20px 20px;
 
+        time {
+            line-height: 2.4rem;
+            font-size: 1rem;
+          }
        img {
             width: 100%;
             height: auto;

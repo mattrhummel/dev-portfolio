@@ -44,17 +44,3 @@
 }
 
 
-.skills-list {
-    list-style-type: none;
-    width: auto;
-    li {  
-        display: inline-block;
-        margin: 5px;
-        i {
-            background-color: $secondary;
-            color: $white;
-            padding: 15px 20px;
-            border-radius: 20px;
-        }
-    }
-}

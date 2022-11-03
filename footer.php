@@ -14,19 +14,17 @@
 
 <section class="contact-section grey-background">
 
-        <div class="container spacebetween">
                         <h3><?php _e(' Need help with a project? I would love to hear from you.', 'dev-portfolio') ?>
                         </h3>
                         <a href="<?php esc_html_e('https://matthummel.com/contact/') ?> "
                                 class="button"><?php _e('Contact Me', 'dev-portfolio') ?> </a>
-        </div>
 
 </section>
 
 </main>
 
 
-<footer class="text-center dark-background">
+<footer class="page-footer text-center dark-background">
 
 
         <p class="light-text">
