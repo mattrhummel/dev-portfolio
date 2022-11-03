@@ -26,7 +26,6 @@ h2 {
 h3 {
       font-size: 1.8rem;
       line-height:2rem;
-  
 
     a {
       text-decoration: none;
@@ -65,15 +64,23 @@ section h1 {
   margin-bottom: 40px;
 }
 main a {
-    color: $secondary;
-    text-decoration: none;
+    color: $link-color;
+    text-decoration: underline;
+    padding: 0 2px;
     &:hover {
-        color: $yellow;
+        color: $blue;
         text-decoration: underline;
     }
 }
 main ul li {
   padding: 5px 0;
+
+  a {
+    color: $link-color;
+    &:hover {
+      color: $blue;
+    } 
+  }
 }
 
 .inline-pills {

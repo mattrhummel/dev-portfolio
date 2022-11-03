@@ -62,7 +62,7 @@ while ( have_posts() ) :
 				<?php if ( get_field('project_url') ) : ?>
 
 					<li> <a href="<?php echo get_field('project_url'); ?>"  target="_blank"> 
-						   <?php _e('View Project', 'dev-portfolio') ?>
+						   <?php _e('view project', 'dev-portfolio') ?>
 						</a>
 					</li>
 
@@ -71,7 +71,7 @@ while ( have_posts() ) :
 				<?php if ( get_field('project_sourcecode_url') ) : ?>
 
 						<li> <a href="<?php echo get_field('project_sourcecode_url'); ?>"  target="_blank"> 
-								<?php _e('View Project', 'dev-portfolio') ?>
+								<?php _e('source code', 'dev-portfolio') ?>
 							</a>
 						</li>
 
