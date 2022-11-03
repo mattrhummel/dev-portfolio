@@ -57,8 +57,8 @@
             </nav><!-- #site-navigation -->
 
             <ul class="social-links">
-                <li>
-                    <a href="https://github.com/mattrhummel" class="dark-background" title="Github">
+                <li >
+                    <a href="https://github.com/mattrhummel" class="dark-background" title="Github" >
                         <i class="fa-brands fa-github-alt light-text"></i>
                     </a>
                 </li>
