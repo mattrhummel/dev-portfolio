@@ -76,9 +76,7 @@ get_header();
 
 <section class="light-background row">
 
-	<header class="text-center row-header">
-		<h1 class="headline" ><?php _e('Latest Projects', 'dev-portfolio') ?></h1>
-	</header>
+	<h2 class="text-center"><?php _e('Latest Projects', 'dev-portfolio') ?></h2>
 
 	<div class="project-container">
 
@@ -164,9 +162,7 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 <section class="light-background row">
 
-	<header class="text-center row-header">
-		<h1><?php _e('Latest Post', 'dev-portfolio') ?></h1>
-	</header>
+		<h2 class="text-center"><?php _e('Latest Post', 'dev-portfolio') ?></h2>
 
 <div class="card-container-full">
 
