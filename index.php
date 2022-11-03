@@ -108,7 +108,7 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 <p><?php the_excerpt(); ?></p>
 
-<footer?>
+<footer>
 
 	<?php if ( have_rows('project_tool') ) : ?>
 
@@ -192,7 +192,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 				<footer class="entry-footer">
 					<?php dev_portfolio_entry_footer(); ?>
-					<time itemprop="datePublished"><?php echo get_the_date(); ?></time>
+					<p><?php echo get_the_date(); ?></p>
 
 				</footer><!-- .entry-footer -->
 
