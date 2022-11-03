@@ -23,14 +23,14 @@
 
 </main>
 
-<footer class="page-footer text-center dark-background">
+<footer class="page-footer dark-background">
 
-        <p class="light-text">
-                Designed and Developed by <?php bloginfo('name'); ?>
+        <p class="light-text padding-right-60">
+                <strong>Designed and Developed by <?php bloginfo('name'); ?></strong>
+                
         </p>
 
-        Valid CSS!
-
+       
 <p>
 <a href="http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=matthummel.com&usermedium=all&vextwarning=&warning=1">
     <img style="border:0;width:88px;height:31px"
