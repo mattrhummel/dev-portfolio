@@ -108,7 +108,6 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 <p><?php the_excerpt(); ?></p>
 
-<footer>
 
 	<?php if ( have_rows('project_tool') ) : ?>
 
@@ -146,7 +145,6 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 		</ul>
 
-	</footer>
 
 </article>
 
