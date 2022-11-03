@@ -90,6 +90,10 @@ main ul li {
       font-weight: bold;
       text-transform: uppercase;
       margin: 5px 0;
+
+      @media (min-width: 992px){
+      	margin: 5px 10px 5px 0;
+      }
       }
 }
 table {
