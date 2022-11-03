@@ -192,8 +192,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 				<footer class="entry-footer">
 					<?php dev_portfolio_entry_footer(); ?>
-					<time datetime="<?php echo get_the_date('y, m'); ?>"
-						itemprop="datePublished"><?php echo get_the_date(); ?></time>
+					<time itemprop="datePublished"><?php echo get_the_date(); ?></time>
 
 				</footer><!-- .entry-footer -->
 

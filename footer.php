@@ -26,7 +26,6 @@
 
 <footer class="page-footer text-center dark-background">
 
-
         <p class="light-text">
                 Designed and Developed by <?php bloginfo('name'); ?>
         </p>
