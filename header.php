@@ -34,29 +34,23 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <?php wp_body_open(); ?>
+    <?php   wp_body_open(); ?>
+
     <a href="#main-content" class="skip">Skip to main content</a>
+
+    <div id="wrapper">
 
     <header class="nav-container">
 
+                
+               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
+                
+                <img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt="" class="bio-photo"/>
+                <span><?php bloginfo(); ?></span>
 
-            <?php
-			the_custom_logo(); ?>
+              </a>
 
-            <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo"><?php bloginfo(); ?></a>
-            </h1>
-            <nav id="site-navigation">
-                <?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary',
-				)
-			);
-			?>
-            </nav><!-- #site-navigation -->
-
-            <ul class="social-links">
+              <ul class="social-links">
                 <li >
                     <a href="https://github.com/mattrhummel" class="dark-background" title="Github" >
                         <i class="fa-brands fa-github-alt light-text"></i>
@@ -70,6 +64,36 @@
             </ul>
 
 
+                <a href="javascript:void(0)" class="light-text open-menu" onclick="openNav()">
+                     <i class="fa-sharp fa-solid fa-bars"></i>
+                </a>
+
     </header>
 
+<nav id="mySidenav" class="sidenav">
+
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</i>
+
+
+    <div class="container">
+
+
+</a>
+
+  <?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary',
+				)
+			);
+			?>
+
+        </div>
+
+        </div>
+</nav>
+
     <main id="main-content">
+
+
