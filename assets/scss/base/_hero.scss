@@ -1,9 +1,8 @@
 /*Section Styles*/
 
 .hero {
-    display: block;
-    background-color: #f9f9f9;
-
+    display: block;   
+    background-color: #f9f9f9; 
     @media (min-width: 768px) {
         
         display: flex;
@@ -17,12 +16,14 @@
     @media (min-width: 992px) {
         width: 100vw;
         height: 70vh;
-
     }
-
+   @media (min-width: 1200px){
+    width: 100vw;
+    height: 100vh;
+   }
     .hero-content {
-
-        display: block;
+        height: 100;
+        position: relative;
         padding: 20px;
 
         @media (min-width: 768px) {
@@ -83,7 +84,7 @@
                 p {
 
                     font-size: 1em;
-                    line-height: 1.6em;
+                    line-height: 1.8em;
 
 
                 }
@@ -125,11 +126,10 @@
                 line-height: 1.4em;
             }
             @media (min-width:768px) {
-                font-size: 3em;
+                font-size: 2.2em;
                 line-height: 1.4em;
 
             }
-
             @media (min-width: 1200px) {
                 font-size: 4em;
                 line-height: 1.2em;
