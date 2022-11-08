@@ -43,7 +43,7 @@
      }
         .hero-card {
             background-color: $gray;
-            padding: 40px;
+            padding: 20px;
             margin-bottom: 20px;          
         }
      
@@ -58,6 +58,14 @@
           }
           .card2, .card3, .card4 {
             margin: 0 40px 20px 40px;
+           
+            p {
+                
+                font-size: 1.2em;
+                line-height: 1.2em;
+            
+        
+        }
             
           }
           .card2 { 
@@ -66,49 +74,20 @@
             grid-row-end: 1;
             grid-column-end: 2;
 
-            p {
-                font-size: 1rem;
-                font-size: 1rem;
-        
-                @media (min-width: 768px){
-                    font-size: 1.8em;
-                    line-height: 1.4em;
-                }
-            
-            }
+     
           }
           .card3 { 
             grid-row-start: 2;
             grid-column-start: 2;   
             grid-row-end: 2;
              grid-column-end: 2;
-             p {
-                font-size: 1rem;
-                font-size: 1rem;
-
-        
-                @media (min-width: 768px){
-                    font-size: 1.4em;
-                    line-height: 1.4em;
-                }
-            
-            }
+       
           }
           .card4 { 
             grid-row-start: 3;
             grid-column-start: 2;
             grid-row-end: 3;
             grid-column-end: 2;
-            p {
-                font-size: 1rem;
-                font-size: 1rem;
-        
-                @media (min-width: 768px){
-                    font-size: 1.4em;
-                    line-height: 1.4em;
-                }
-            
-            }
           }
 
     }
@@ -124,7 +103,7 @@
 
         }
         @media (min-width: 1200px){
-            font-size: 3em;
+            font-size: 4.6em;
             line-height: 1.2em;
         }
     }
