@@ -2,11 +2,11 @@
 function openNav()
  {
     if (window.matchMedia("(max-width:772px)").matches) { document.getElementById("popOutMenu").style.width =
-  "100%"} else {
+  "70%"} else {
     document.getElementById("popOutMenu").style.width =
-    "38%"
+    "25%"
   }
-  document.getElementById("wrapper").style.marginRight = "38%";
+  document.getElementById("wrapper").style.marginRight = "25%";
   
 }
 

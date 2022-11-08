@@ -2,110 +2,142 @@
 
 .hero {
     display: block;
-    
-
-    @media (min-width: 768px){
     background-color: #f9f9f9;
-    display: flex;
-    width: 100vw;
-    height: 90vh;
-    justify-items: center;
-    margin: auto;
+
+    @media (min-width: 768px) {
+        
+        display: flex;
+        width: 100vw;
+        height: 70vh;
+        justify-items: center;
+        margin: auto;
 
     }
+
+    @media (min-width: 992px) {
+        width: 100vw;
+        height: 70vh;
+
+    }
+
     .hero-content {
 
         display: block;
-        padding: 0 40px;
-        
-        @media (min-width: 768px){
+        padding: 20px;
+
+        @media (min-width: 768px) {
             display: flex;
             margin: auto;
             padding: 40px;
         }
-
-        .hero-card-container { 
+        
+            .hero-card-container {
             display: block;
             padding: 0;
             margin: auto;
-            
-    
-        @media (min-width: 1200px){
-            
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr; 
-        row-gap: 2px;
 
-     }
-        .hero-card {
-            padding: 20px;
-            margin-bottom: 20px;          
+            
+            @media (min-width: 768px) {
+
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 2px;
+
+            }
+
+            .hero-card {
+                padding: 20px;
+
+                @media (min-width: 768px) {
+                padding: 0 40px;
+                }
+                margin-bottom: 20px;
+            }
+
+            .card1 {
+
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-row-end: 4;
+                grid-column-end: 1;
+            
+                padding: 0 20px 0 20px;
+               
+                @media (min-width: 768px) {
+                padding: 0 20px;
+                }
+
+            }
+
+            .card2,
+            .card3,
+            .card4 {
+
+                @media (min-width: 768px) {
+                margin: 0 40px 20px 40px;
+                padding: 0 0 0 20px;
+
+                }
+
+                p {
+
+                    font-size: 1em;
+                    line-height: 1.6em;
+
+
+                }
+
+            }
+
+            .card2 {
+                grid-row-start: 1;
+                grid-column-start: 2;
+                grid-row-end: 1;
+                grid-column-end: 2;
+
+
+            }
+
+            .card3 {
+                grid-row-start: 2;
+                grid-column-start: 2;
+                grid-row-end: 2;
+                grid-column-end: 2;
+
+            }
+
+            .card4 {
+                grid-row-start: 3;
+                grid-column-start: 2;
+                grid-row-end: 3;
+                grid-column-end: 2;
+            }
+
         }
-     
-        .card1 { 
-           
-            height: 100%;
-            grid-row-start: 1;
-            grid-column-start:1;
-            grid-row-end:4;
-            grid-column-end: 1; 
 
-          }
-          .card2, .card3, .card4 {
-            margin: 0 40px 20px 40px;
-           
-            p {
-                
-                font-size: 1em;
-                line-height: 1.6em;
-            
-        
-        }
-            
-          }
-          .card2 { 
-            grid-row-start: 1;
-            grid-column-start: 2;
-            grid-row-end: 1;
-            grid-column-end: 2;
-
-     
-          }
-          .card3 { 
-            grid-row-start: 2;
-            grid-column-start: 2;   
-            grid-row-end: 2;
-             grid-column-end: 2;
-       
-          }
-          .card4 { 
-            grid-row-start: 3;
-            grid-column-start: 2;
-            grid-row-end: 3;
-            grid-column-end: 2;
-          }
-
-    }
-
-    h2 {
-        font-size: 2em;
-        line-height: 1.4em;
-       
-
-        @media (min-width:768px) {
-            font-size: 3.4em;
+        h2 {
+            font-size: 2em;
             line-height: 1.4em;
 
+            @media (max-width: 767.98px){
+                font-size: 2.3em;
+                line-height: 1.4em;
+            }
+            @media (min-width:768px) {
+                font-size: 3em;
+                line-height: 1.4em;
+
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 4em;
+                line-height: 1.2em;
+            }
         }
-        @media (min-width: 1200px){
-            font-size: 4em;
-            line-height: 1.2em;
-        }
+
+
+
     }
-
-
-
-}
 
 }
