@@ -167,7 +167,7 @@ function dev_portfolio_scripts() {
 	wp_style_add_data( 'dev-portfolio-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'dev-portfolio-navigation', get_template_directory_uri() . '/js/scripts.js', array(), _S_VERSION, true );
-    wp_enqueue_script( 'dev-portfolio-font-awesome', 'https://kit.fontawesome.com/280dc35507.js', array(), _S_VERSION, false );
+    wp_enqueue_script( 'dev-portfolio-font-awesome', 'https://kit.fontawesome.com/280dc35507.js', array(),  false );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

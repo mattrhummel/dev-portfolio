@@ -24,29 +24,35 @@ get_header();
 
 	<div class="hero-content">
 
-		<h2><?php _e('Self-tought, passionate front-end web developer.','dev-portfolio') ?></h2>
+		<div class="hero-card-container">
 
-		<p><?php _e('Hi I am Matt, a Front-End Developer in Fredericksburg, VA. Below is a brief snapshot about my experience', 'dev-portfolio') ?></p>
+			<div class="hero-card card1">
 
-		<div class="card-container">
+			<h2><?php _e('Web developer in Fredericksburg, Virginia.','dev-portfolio') ?></h2>
 
-			<div class="card">
+			<p><?php _e('Hi I am Matt, a self-tough, passionate web developer specializing in front-end development, WordPress, and Accessibility', 'dev-portfolio') ?></p>
 
-			<i class="fa-sharp fa-solid fa-code-simple fa-6x"></i>
+			</div>
 
-				<h3>Front-End Development</h3>
+			<div class="hero-card card2">
+
+			<h3><i class="fa-sharp fa-solid fa-code-simple"></i>
+
+
+<span>Front-End Development</span></h3>
 
 				<p class="small">
 					Build responsive and fast loading websites using HTML, CSS, SASS and Javascript.
 				</p>
 
+
 			</div>
 
-			<div class="card">
+			<div class="hero-card card3">
 
-			<i class="fa-brands fa-wordpress fa-6x"></i>
+			<h3><i class="fa-brands fa-wordpress"></i>
 
-				<h3>WordPress Development</h3>
+				<span>WordPress Development</span></h3>
 
 				<p class="small">
 					Create custom themes using PHP, mySQL, MAMP, Advanced Custom Fields and Underscore Starter Theme.
@@ -54,11 +60,10 @@ get_header();
 
 			</div>
 
-			<div class="card">
+			<div class="hero-card card4">
 
-			<i class="fa-brands fa-accessible-icon fa-6x"></i>
-
-				<h3>Accessibility & SEO</h3>
+			<h3><i class="fa-brands fa-accessible-icon"></i>
+<span>Accessibility & SEO</span></h3>
 
 				<p class="small">
 					Ensuring websites can be accessed by all visitors, be found in search engines and measure their success using analytics.
@@ -66,7 +71,6 @@ get_header();
 
 			</div>
 
-		</div>
 
 	</div>
 

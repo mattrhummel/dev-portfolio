@@ -34,53 +34,48 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <?php   wp_body_open(); ?>
+    <?php wp_body_open(); ?>
 
-    <a href="#main-content" class="skip">Skip to main content</a>
+    <a href="<?php esc_html_e('#main-content', 'dev-portfolio') ?>" class="skip"><?php _e('Skip to main content', 'dev-portfolio') ?></a>
 
-    <div id="wrapper">
+    <header class="nav-container" id="mainHeader">
 
-    <header class="nav-container">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
 
-                
-               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
-                
-                <img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt="" class="bio-photo"/>
-                <span><?php bloginfo(); ?></span>
+            <img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt=""
+                class="bio-photo" />
+            <span><?php bloginfo(); ?></span>
 
-              </a>
+        </a>
 
-              <ul class="social-links">
-                <li >
-                    <a href="https://github.com/mattrhummel" class="dark-background" title="Github" >
-                        <i class="fa-brands fa-github-alt light-text"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/mattrhummel/" class="dark-background" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in light-text"></i>
-                    </a>
-                </li>
-            </ul>
-
-
-                <a href="javascript:void(0)" class="light-text open-menu" onclick="openNav()">
-                     <i class="fa-sharp fa-solid fa-bars"></i>
+        <ul class="social-links">
+            <li>
+                <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>" class="dark-background" title="Github">
+                    <i class="fa-brands fa-github-alt light-text"></i>
                 </a>
+            </li>
+            <li>
+                <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" class="dark-background" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in light-text"></i>
+                </a>
+            </li>
+        </ul>
 
-    </header>
+        <a href="javascript:void(0)" class="light-text open-menu" onclick="openNav()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </a>
 
-<nav id="mySidenav" class="sidenav">
+        <nav id="popOutMenu" class="main-menu">
 
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</i>
-
-
-    <div class="container">
+            <a href="javascript:void(0)" class="close-button" onclick="closeNav()">x</i>
 
 
-</a>
+                <div class="container">
 
-  <?php
+
+            </a>
+
+            <?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-1',
@@ -89,11 +84,14 @@
 			);
 			?>
 
-        </div>
+            </div>
 
-        </div>
-</nav>
+            </div>
+        </nav>
 
-    <main id="main-content">
+    </header>
 
 
+    <div id="wrapper">
+
+        <main id="main-content">
