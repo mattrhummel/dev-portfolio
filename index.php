@@ -28,9 +28,9 @@ get_header();
 
 			<div class="hero-card card1">
 
-			<h2><?php _e('Web developer in Fredericksburg, Virginia.','dev-portfolio') ?></h2>
+			<h2><?php _e('Front-end Developer in Fredericksburg, Virginia.','dev-portfolio') ?></h2>
 
-			<p><?php _e('Hi I am Matt, a self-tough, passionate web developer specializing in front-end development, WordPress, and Accessibility', 'dev-portfolio') ?></p>
+			<p><?php _e('Hi I am Matt, a self-tough, passionate web developer specializing in Front-end Development, WordPress, and Accessibility', 'dev-portfolio') ?></p>
 
 			</div>
 
@@ -38,13 +38,11 @@ get_header();
 
 			<h3><i class="fa-sharp fa-solid fa-code-simple"></i>
 
-
-<span>Front-End Development</span></h3>
+				<span>Front-End Development</span></h3>
 
 				<p class="small">
 					Build responsive and fast loading websites using HTML, CSS, SASS and Javascript.
 				</p>
-
 
 			</div>
 
