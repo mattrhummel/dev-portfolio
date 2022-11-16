@@ -29,7 +29,9 @@ get_header();
 <section class="container light-background section-spacing-top section-spacing">
 
 
-        <div class="card-container-full">
+<div class="grid-row">
+		
+		<div class="grid-container">
 
             <?php $args = array(  
                 'post_type' => 'post',
@@ -64,6 +66,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
             wp_reset_postdata();  
             ?>
         </div>
+</div>
 
 </section>
 
