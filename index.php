@@ -161,9 +161,9 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 <section class="light-background row">
 
-		<h2 class="text-center"><?php _e('Latest Post', 'dev-portfolio') ?></h2>
+	<h2 class="text-center mb-40"><?php _e('Latest Post', 'dev-portfolio') ?></h2>
 
-	<div class="grid-row">
+	<div class="grid-row mb-80">
 		
 		<div class="grid-container">
 
