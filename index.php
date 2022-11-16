@@ -80,7 +80,7 @@ get_header();
 
 	<h2 class="text-center"><?php _e('Latest Projects', 'dev-portfolio') ?></h2>
 
-	<div class="project-container">
+		<div class="project-container">
 
 		<?php $args = array(  
         'post_type' => 'projects',
@@ -116,22 +116,22 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 		<?php while( have_rows('project_tool') ) : the_row(); ?>
 
-		<li><?php the_sub_field('tool_used'); ?></li>
+			<li><?php the_sub_field('tool_used'); ?></li>
 
 		<?php endwhile; ?>
 
 	</ul>
 
-	<?php endif; ?>
+		<?php endif; ?>
 
 			<ul class="inline-list">
 
-		<?php if ( get_field('project_url') ) : ?>
+				<?php if ( get_field('project_url') ) : ?>
 
-			<li> <a href="<?php echo get_field('project_url'); ?>" target="_blank"> 
-					<?php _e('view project', 'dev-portfolio') ?>
-				</a>
-			</li>
+				<li> <a href="<?php echo get_field('project_url'); ?>" target="_blank"> 
+						<?php _e('view project', 'dev-portfolio') ?>
+					</a>
+				</li>
 
 		<?php endif; ?>
 
@@ -150,10 +150,7 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 </article>
 
-
-
-
-		<?php
+		   <?php
 				endwhile;
 				wp_reset_postdata();  
             ?>
@@ -166,14 +163,15 @@ if ( ! empty( $large_image_url[0] ) ) {
 
 		<h2 class="text-center"><?php _e('Latest Post', 'dev-portfolio') ?></h2>
 
-<div class="card-container-full">
+	<div class="grid-row">
+		
+		<div class="grid-container">
 
 	<?php $args = array(  
         'post_type' => 'post',
         'post_status' => 'publish',
 		'posts_per_page' => 3,
 
-    
 );
 
 $loop = new WP_Query( $args ); 
@@ -199,6 +197,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
             endwhile;
             wp_reset_postdata();  
             ?>
+		</div>
 		</div>
 </section>
 
