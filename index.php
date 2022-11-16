@@ -30,7 +30,7 @@ get_header();
 
 			<h2><?php _e('Front-end Developer in Fredericksburg, Virginia.','dev-portfolio') ?></h2>
 
-			<p><?php _e('Hi I am Matt, a self-tough, passionate web developer specializing in Front-end Development, WordPress, and Accessibility', 'dev-portfolio') ?></p>
+			<p><?php _e('Hi I am Matt, a self-taught, passionate web developer specializing in Front-end Development, WordPress, and Accessibility', 'dev-portfolio') ?></p>
 
 			</div>
 
@@ -41,7 +41,7 @@ get_header();
 				<span>Front-End Development</span></h3>
 
 				<p class="small">
-					Build responsive and fast loading websites using HTML, CSS, SASS and Javascript.
+					Build responsive and fast loading websites using HTML, CSS and Javascript.
 				</p>
 
 			</div>
