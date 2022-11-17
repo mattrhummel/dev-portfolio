@@ -2,9 +2,10 @@
 .page-banner {
     height: 50vh;
     background-color: $gray;
-    padding: 0 40px;
-    text-align: center;
-    display: block;
+display: block;
+height: auto;
+padding: 80px 40px;
+text-align: center;
 
     @media (min-width: 1200px){
         display: flex;
