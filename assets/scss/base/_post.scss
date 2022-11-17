@@ -17,7 +17,8 @@
   }
   .nav-next a, .nav-previous a {
     padding: 6px 0;
-    
+    font-size: clamp(16px, 5vw, 24px);
+    line-height: 1.4;
 
         font-size: clamp(16px, 6vw, 23px);
         line-height: 1.4;

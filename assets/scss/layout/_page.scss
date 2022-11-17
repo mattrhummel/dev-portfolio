@@ -11,7 +11,10 @@
 
     @media (min-width: 1200px){
       align-items: center;
+      width: 100%;
+      max-width: 1440px;
     }
+    
     h1 {
        font-size: clamp(16px, 6vw, 48px);
        line-height: 1.4;

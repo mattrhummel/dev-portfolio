@@ -38,13 +38,16 @@ h5 {
 }
 
 h6 {
-  font-size: clamp(16px, 6vw, 24px);
+  font-size: clamp(16px, 6vw, 16px);
   line-height: 1.4;
 
 }
 main p {
     margin-bottom: 0.875em;
     line-height: 2rem;
+
+    font-size: clamp(16px, 3vw, 16px);
+    line-height: 1.8;
 }
 main h1 {
   margin-bottom: 20px;
@@ -110,24 +113,35 @@ table {
 address {
     display: block;
     font-style: italic;
+    line-height: 1.4rem;
+    margin-bottom: 10px;
   }
 
- main ul, ol {
-    margin: 10px 20px;
+ main ol, main ul {
+    margin: 10px 12px;
     li {
+    
         li {
-            padding-left: 20px;
-            line-height: 2rem;
+            padding-left: 14px;
         }
-    }
-  }
 
-  main  ul.inline-list {
+      }
+    
+  }
+  main ol li {
+    line-height: 1.8rem;
+
+     li {
+      line-height: 1.8rem;
+
+     }
+  }
+   main  ul.inline-list {
                  padding-left: 0;
                  margin-left: 0;
     li {
         display: inline-block; 
-        padding: 12px 10px 12px 0;
+        padding: 6px 0;
         text-transform: uppercase;
         text-decoration: underline;
         margin: 5px 0;
@@ -161,22 +175,30 @@ address {
     margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
+    font-size: clamp(16px, 6vw, 16px);
+    line-height: 1.6;
   }
   dt {
     display: block;
     background-color: $gray;
     padding: 10px;
     font-weight: bold;
+    font-size: clamp(16px, 6vw, 16px);
+    line-height: 1.6;
 
   }
   dd {
     padding: 10px 20px;
+    font-size: clamp(16px, 6vw, 16px);
+    line-height: 1.6;
   }
   blockquote {
     background-color: $primary;
     border-left: 5px solid $secondary;
     color: $white;
     padding: 10px;
+    font-size: clamp(16px, 6vw, 16px);
+    line-height: 1.4;
   }
   cite {
     background-color: $gray;
