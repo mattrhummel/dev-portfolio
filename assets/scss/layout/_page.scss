@@ -1,6 +1,6 @@
 /*Layout Styles*/
 .page-banner {
-    height: 50vh;
+    height: auto;
     background-color: $gray;
 display: block;
 height: auto;
@@ -15,6 +15,8 @@ text-align: center;
     justify-items: center;
       width: 100%;
       max-width: 1440px;
+      height: 50vh;
+
     }
 
     h1 {
