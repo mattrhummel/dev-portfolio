@@ -19,7 +19,7 @@ get_header();
 ?>
         <header class="page-banner">
                 <h1><?php the_title(); ?></h1>
-                <p><?php _e('Matt is a Front-end Developer based in Fredericksburg, Virginia', 'dev-portfolio') ?> </p>
+                <p><?php the_excerpt(); ?></p>
         </header>
 
         <section class="light-background">

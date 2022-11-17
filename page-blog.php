@@ -22,7 +22,7 @@ get_header();
 
 <header class="page-banner">
         <h1><?php the_title(); ?></h1>
-        <p><?php _e('My web development blog. Projects I am working, resources I find useful and other dev topics.', 'dev-portfolio') ?> </p>
+        <p><?php the_excerpt(); ?> </p>
 </header>
 
 

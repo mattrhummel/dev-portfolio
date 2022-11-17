@@ -53,6 +53,8 @@ the_post_thumbnail( 'large' ); // Large resolution (default 1024px x 1024px max)
 the_post_thumbnail( 'full' ); // Original image resolution (unmodified)
 the_post_thumbnail( array( 100, 100 ) ); // Other resolutions (height, width)
 
+	
+add_post_type_support( 'page', 'excerpt' );
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
