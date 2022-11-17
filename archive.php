@@ -21,7 +21,7 @@ get_header();
 
 <section class="light-background">
 
-	<div class="project-container spacer">
+	<div class="project-container spacer mb-80">
 
 		<?php		
 while ( have_posts() ) :
