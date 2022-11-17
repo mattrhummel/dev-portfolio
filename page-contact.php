@@ -19,7 +19,6 @@ get_header();
 
     <header class="page-banner">
             <h1><?php the_title(); ?></h1>
-            <p><?php the_excerpt(); ?></p>
     </header>
 
     <section class="container section-content light-background section-spacing-bottom">

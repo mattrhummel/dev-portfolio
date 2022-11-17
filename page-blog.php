@@ -22,7 +22,6 @@ get_header();
 
 <header class="page-banner">
         <h1><?php the_title(); ?></h1>
-        <p><?php the_excerpt(); ?> </p>
 </header>
 
 
