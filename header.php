@@ -55,6 +55,11 @@
                 </a>
             </li>
             <li>
+                <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" class="dark-background" title="Facebook">
+                    <i class="fa-brands fa-facebook-f light-text"></i>
+                </a>
+            </li>
+            <li>
                 <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" class="dark-background" title="LinkedIn">
                     <i class="fa-brands fa-linkedin-in light-text"></i>
                 </a>
