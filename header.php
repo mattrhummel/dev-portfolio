@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" class="dark-background" title="LinkedIn">
+                <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" class="dark-background" title="Medium">
                     <i class="fa-brands fa-medium light-text"></i>
                 </a>
             </li>
