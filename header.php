@@ -59,6 +59,11 @@
                     <i class="fa-brands fa-linkedin-in light-text"></i>
                 </a>
             </li>
+            <li>
+                <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" class="dark-background" title="LinkedIn">
+                    <i class="fa-brands fa-medium light-text"></i>
+                </a>
+            </li>
         </ul>
 
         <a href="javascript:void(0)" class="light-text open-menu" onclick="openNav()">
