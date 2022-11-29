@@ -62,16 +62,15 @@
         li {
             list-style: none;
             display: inline-block;
-            margin: 2px;
 
             a {
-                padding: 8px 12px;
-                border-radius: 50px;
-                background-color: $primary;
+                color: $primary;
                 transition: all 0.2s ease;
-
+                height: auto;
+                 padding: 0 10px;
+                 font-size: 1.2em;
                 &:hover {
-                    background-color: $secondary;
+                    color: $secondary;
 
                 }
             }

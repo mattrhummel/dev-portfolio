@@ -50,23 +50,23 @@
 
         <ul class="social-links">
             <li>
-                <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>" class="dark-background" title="Github">
-                    <i class="fa-brands fa-github-alt light-text"></i>
+                <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>"  title="Github">
+                    <i class="fa-brands fa-github-alt"></i>
                 </a>
             </li>
             <li>
-                <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" class="dark-background" title="Facebook">
-                    <i class="fa-brands fa-facebook-f light-text"></i>
+                <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" title="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
                 </a>
             </li>
             <li>
-                <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" class="dark-background" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in light-text"></i>
+                <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </a>
             </li>
             <li>
-                <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" class="dark-background" title="Medium">
-                    <i class="fa-brands fa-medium light-text"></i>
+                <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" title="Medium">
+                    <i class="fa-brands fa-medium"></i>
                 </a>
             </li>
         </ul>
