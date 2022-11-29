@@ -71,7 +71,7 @@
             </li>
         </ul>
 
-        <a href="javascript:void(0)" class="light-text open-menu" onclick="openNav()" aria-label="Open">
+        <a href="javascript:void(0)" class="open-menu" onclick="openNav()" aria-label="Open">
             <i class="fa-sharp fa-solid fa-bars"></i>
         </a>
 
