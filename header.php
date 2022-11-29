@@ -79,11 +79,10 @@
 
             <a href="javascript:void(0)" class="close-button" onclick="closeNav()">x</i>
 
+            </a>
 
                 <div class="container">
 
-
-            </a>
 
             <?php
 			wp_nav_menu(
