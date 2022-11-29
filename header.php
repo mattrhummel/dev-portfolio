@@ -71,9 +71,9 @@
             </li>
         </ul>
 
-        <button href="javascript:void(0)" class="light-text open-menu" onclick="openNav()" aria-label="Open">
+        <a href="javascript:void(0)" class="light-text open-menu" onclick="openNav()" aria-label="Open">
             <i class="fa-sharp fa-solid fa-bars"></i>
-        </button>
+        </a>
 
         <nav id="popOutMenu" class="main-menu">
 
