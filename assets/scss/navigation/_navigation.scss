@@ -72,8 +72,8 @@
                 color: $primary;
                 transition: all 0.2s ease;
                 height: auto;
-                 padding: 0 10px;
-                 font-size: 1.2em;
+                 padding: 0 14px;
+                 font-size: 32px;
                 &:hover {
                     color: $secondary;
 
@@ -161,7 +161,7 @@
                 padding: 10px;
                 margin-bottom: 20px;
                 min-width: 100%;
-                
+
                 &:hover {
                     cursor: grab;
                     border-left: 2px solid $secondary;
