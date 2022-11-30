@@ -201,7 +201,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 				</footer><!-- .entry-footer -->
 
 			<a href="<?php echo get_the_permalink(); ?>" class="button">
-				<?php _e('Read More', 'dev_portfolio')?></a>
+				<?php _e('Read Blog Post', 'dev_portfolio')?></a>
 			</div>
 
 			<?php
