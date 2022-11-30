@@ -15,19 +15,18 @@ get_header();
 
 <header class="page-banner">
 	<h1><?php the_archive_title(); ?></h1>
-	<p><?php the_archive_description(); ?></p>
 </header>
 
-<section class="light-background">
+<section class="light-background row ">
 
-	<div class="project-container spacer mb-80">
+<div class="project-container">
 
 		<?php		
 while ( have_posts() ) :
 
 		the_post();  ?>
 
-		<article class="project">
+<article class="project">
 
 			<?php if ( has_post_thumbnail() ) {
 		 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'normal' );
@@ -37,7 +36,6 @@ while ( have_posts() ) :
 	 } ?>
 
 			<h3><?php the_title(); ?></h3>
-
 			<p><?php the_excerpt(); ?></p>
 
 			<footer?>
@@ -81,8 +79,6 @@ while ( have_posts() ) :
 				</footer>
 
 
-
-
 		</article>
 
 
@@ -95,7 +91,6 @@ while ( have_posts() ) :
 	endif; ?>
 
 </section>
-</div>
 
 <?php
 get_footer();
