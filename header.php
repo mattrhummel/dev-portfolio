@@ -71,12 +71,12 @@
                 </li>
             </ul>
 
-            <button href="javascript:void(0)" class="open-menu" onclick="openNav()" aria-label="Open">
+            <button href="javascript:void(0)" class="open-menu" onclick="openNav()" aria-label="menu open">
                 <i class="fa-sharp fa-solid fa-bars"></i>
             </button>
 
             <nav id="popOutMenu" class="main-menu">
-                        <button href="javascript:void(0)" class="close-button" onclick="closeNav()"> <i class="fa-solid fa-xmark"></i>
+                        <button href="javascript:void(0)" class="close-button" onclick="closeNav()" aria-label="menu close"> <i class="fa-solid fa-xmark"></i>
                         </button>
 
                     <div class="popout-container">
