@@ -39,65 +39,62 @@
     <a href="<?php esc_html_e('#main-content', 'dev-portfolio') ?>" class="skip"><?php _e('Skip to main content', 'dev-portfolio') ?></a>
 
     <header class="nav-container" id="mainHeader">
+        <div class="container">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
 
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
-
-            <img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt=""
-                class="bio-photo" />
-            <span><?php bloginfo(); ?></span>
-
-        </a>
-
-        <ul class="social-links">
-            <li>
-                <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>"  title="Github">
-                    <i class="fa-brands fa-github-alt"></i>
-                </a>
-            </li>
-            <li>
-                <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" title="Facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-            </li>
-            <li>
-                <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" title="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li>
-                <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" title="Medium">
-                    <i class="fa-brands fa-medium"></i>
-                </a>
-            </li>
-        </ul>
-
-        <a href="javascript:void(0)" class="open-menu" onclick="openNav()" aria-label="Open">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-        </a>
-
-        <nav id="popOutMenu" class="main-menu">
-
-            <a href="javascript:void(0)" class="close-button" onclick="closeNav()">x</i>
+                <img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt=""
+                    class="bio-photo" />
+                <span><?php bloginfo(); ?></span>
 
             </a>
 
-                <div class="container">
+            <ul class="social-links">
+                <li>
+                    <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>"  title="Github">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" title="Medium">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                </li>
+            </ul>
 
+            <button href="javascript:void(0)" class="open-menu" onclick="openNav()" aria-label="Open">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </button>
 
-            <?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary',
-				)
-			);
-			?>
+            <nav id="popOutMenu" class="main-menu">
+                        <button href="javascript:void(0)" class="close-button" onclick="closeNav()"> <i class="fa-solid fa-xmark"></i>
+                        </button>
 
-            </div>
+                    <div class="popout-container">
 
-            </div>
-        </nav>
+    
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'menu-1',
+                                'menu_id'        => 'primary',
+                            )
+                        );
+                        ?>
 
+                    </div>
+
+            </nav>
+        </div>
     </header>
 
 
