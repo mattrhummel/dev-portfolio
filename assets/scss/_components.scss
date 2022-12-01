@@ -1,3 +1,112 @@
+
+/*Form Styles*/
+form {
+    position: relative;
+}
+
+label,
+input,
+textarea {
+    display: block;
+}
+input, textarea {
+    padding:10px;
+}
+textarea {
+    width: 100%;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #979797;
+}
+
+input.form-button {
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+    padding: 10px 40px;
+}
+
+label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin-bottom: .5em;
+}
+
+.wpforms-submit-container{
+    button.wpforms-submit {
+        background-color: $primary !important;
+        color: $white !important;;
+        border-radius: 38px !important;
+        font-weight: bold !important;
+        transition: all 0.2s ease;
+        letter-spacing: .1em !important;
+        padding: 12px 24px !important;
+
+
+
+        &:hover {
+            background-color: $secondary !important;;
+        }
+    }
+}
+
+/*Layout Styles*/
+.page-banner {
+    height: auto;
+    background-color: $gray;
+display: block;
+height: auto;
+padding: 80px 40px;
+text-align: center;
+
+    @media (min-width: 1200px){
+        display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+      width: 100%;
+      max-width: 1440px;
+      height: 50vh;
+       padding: auto 40px;
+    }
+
+    h1 {
+       font-size: clamp(16px, 6vw, 48px);
+       line-height: 1.4;
+       margin: auto auto 10px auto;
+       
+    }
+    p {
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+    .post-edit-link {
+        display: block;
+        clear: left;
+        padding: 12px 10px 12px 0;
+
+            @media (min-width: 1200px){
+            	text-align: center;
+            }
+
+    }
+}
+
+.bio-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+
 .skip {
     display: none;
 }

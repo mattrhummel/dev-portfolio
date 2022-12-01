@@ -12,7 +12,6 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-V9718KN95J"></script>
