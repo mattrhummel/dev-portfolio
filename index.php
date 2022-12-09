@@ -11,7 +11,6 @@
  *
  * @package dev-portfolio
  */
-
 get_header();
 ?>
 <?php
@@ -19,59 +18,52 @@ get_header();
 	if ( is_home() && is_front_page() ) :
 
 ?>
-
 <header class="hero">
 
 	<div class="hero-content">
 
-		<div class="hero-card-container">
+		<div class="hero-container">
 
-			<div class="hero-card card1">
+				<div class="col-1">
 
-			<h2><?php _e('Front-end Developer in Fredericksburg, Virginia.','dev-portfolio') ?></h2>
+				<h2><?php _e('Hi I am Matt Hummel.','dev-portfolio') ?></h2>
 
-			<p><?php _e('Hi I am Matt, a self-taught, passionate web developer, specializing in Front-end Development, WordPress, and Accessibility.', 'dev-portfolio') ?></p>
+				<p><?php _e('I am self-taught, front-end developer in Fredericksburg, Va.', 'dev-portfolio') ?></p>
 
-			</div>
+				<ul class="social-links">
+                <li>
+                    <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>"  title="Github">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" title="Medium">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                </li>
+            </ul>
 
-			<div class="hero-card card2">
+				</div>
 
-			<h3><i class="fa-sharp fa-solid fa-code-simple"></i>
+				<div class="col-2">
 
-				<span>Front-End Development</span></h3>
+				<img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt=""
+                    class="bio-photo" />
+				</div>
 
-				<p class="small">
-					Build responsive and fast loading websites using HTML, CSS and Javascript.
-				</p>
-
-			</div>
-
-			<div class="hero-card card3">
-
-			<h3><i class="fa-brands fa-wordpress"></i>
-
-				<span>WordPress Development</span></h3>
-
-				<p class="small">
-					Create custom themes using PHP, mySQL, MAMP, Advanced Custom Fields and Underscore Starter Theme.
-				</p>
-
-			</div>
-
-			<div class="hero-card card4">
-
-			<h3><i class="fa-brands fa-accessible-icon"></i>
-<span>Accessibility & SEO</span></h3>
-
-				<p class="small">
-					Ensuring websites can be accessed by all visitors, be found in search engines and measure their success using analytics.
-				</p>
-
-			</div>
-
+		</div>
 
 	</div>
-
 </header>
 
 <?php endif; ?>

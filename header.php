@@ -8,7 +8,6 @@
  *
  * @package dev-portfolio
  */
-
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -41,8 +40,6 @@
         <div class="container">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
 
-                <img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt=""
-                    class="bio-photo" />
                 <span><?php bloginfo(); ?></span>
 
             </a>
@@ -71,28 +68,7 @@
                     </div>
 
 
-                    <ul class="social-links">
-                <li>
-                    <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>"  title="Github">
-                        <i class="fa-brands fa-github-alt"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" title="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" title="Medium">
-                        <i class="fa-brands fa-medium"></i>
-                    </a>
-                </li>
-            </ul>
+
 
             </nav>
         </div>

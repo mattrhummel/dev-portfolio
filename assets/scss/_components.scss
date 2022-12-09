@@ -1,4 +1,3 @@
-
 /*Form Styles*/
 form {
     position: relative;
@@ -9,9 +8,12 @@ input,
 textarea {
     display: block;
 }
-input, textarea {
-    padding:10px;
+
+input,
+textarea {
+    padding: 10px;
 }
+
 textarea {
     width: 100%;
     border-radius: 10px;
@@ -39,10 +41,11 @@ label {
     margin-bottom: .5em;
 }
 
-.wpforms-submit-container{
+.wpforms-submit-container {
     button.wpforms-submit {
         background-color: $primary !important;
-        color: $white !important;;
+        color: $white !important;
+        ;
         border-radius: 38px !important;
         font-weight: bold !important;
         transition: all 0.2s ease;
@@ -52,7 +55,8 @@ label {
 
 
         &:hover {
-            background-color: $secondary !important;;
+            background-color: $secondary !important;
+            ;
         }
     }
 }
@@ -61,55 +65,61 @@ label {
 .page-banner {
     height: auto;
     background-color: $gray;
-display: block;
-height: auto;
-padding: 80px 40px;
-text-align: center;
+    display: block;
+    height: auto;
+    padding: 80px 40px;
+    text-align: center;
 
-    @media (min-width: 1200px){
+    @media (min-width: 1200px) {
         display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    justify-content: center;
-    justify-items: center;
-      width: 100%;
-      max-width: 1440px;
-      height: 50vh;
-       padding: auto 40px;
+        flex: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        max-width: 1440px;
+        height: 50vh;
+        padding: auto 40px;
     }
 
     h1 {
-       font-size: clamp(16px, 6vw, 48px);
-       line-height: 1.4;
-       margin: auto auto 10px auto;
-       
+        font-size: clamp(16px, 6vw, 48px);
+        line-height: 1.4;
+        margin: auto auto 10px auto;
+
     }
+
     p {
         line-height: 1.4;
         margin-bottom: 10px;
     }
+
     .post-edit-link {
         display: block;
         clear: left;
         padding: 12px 10px 12px 0;
 
-            @media (min-width: 1200px){
-            	text-align: center;
-            }
+        @media (min-width: 1200px) {
+            text-align: center;
+        }
 
     }
 }
 
 .bio-photo {
-    width: 250px;
-    height: 250px;
+    height: auto;
     border-radius: 50%;
-}
+    width: 100%;
 
+    @media (max-width: 1199.98px) {
+        margin-top: 20px;
+    }
+}
 
 .skip {
     display: none;
 }
+
 .button {
     border-radius: 25px;
     color: $white;
@@ -133,8 +143,8 @@ text-align: center;
 .pill-container {
     margin: 40px auto;
 
-    @media (min-width: 768px){
-    	margin: 40px 0;
+    @media (min-width: 768px) {
+        margin: 40px 0;
     }
 }
 
@@ -145,7 +155,7 @@ text-align: center;
     text-decoration: none;
     background-color: $primary;
     padding: 12px 24px;
-    margin:   0 auto 10px auto;
+    margin: 0 auto 10px auto;
     display: inline-block;
     width: auto;
     text-align: center;
@@ -154,10 +164,11 @@ text-align: center;
     font-weight: bold;
     letter-spacing: .1em;
 
-    @media (min-width: 576px){
+    @media (min-width: 576px) {
         display: inline-block;
 
     }
+
     @media (min-width:768px) {
         padding: 18px 32px;
         width: auto;
@@ -186,54 +197,60 @@ text-align: center;
         background-color: $primary;
     }
 }
+
 .grid-row {
     display: flex;
     display: block;
     width: 100%;
 
-.grid-container {
-    max-width: 1140px;
-    justify-items: center;
-    padding: 0 40px;
-    @media (min-width: 768px){
-        display: grid; 
-        grid-template-rows: 1fr ;
-        grid-template-columns: 1fr 1fr 1fr ;
-        margin: auto;
-        gap: 20px;
+    .grid-container {
+        max-width: 1140px;
+        justify-items: center;
         padding: 0 40px;
-    }
-    .card { 
-        border: 1px solid $primary; 
-        padding: 20px; 
-        margin-bottom: 20px;
-        
-        h3 {
-            font-size: clamp(16px, 6vw, 28px);
-                        line-height: 1.4;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-top-right-radius: 5px;
-            border-top-left-radius: 5px; 
-          
-        }
-        
-        .entry-footer {
-            font-size: clamp(14px, 3vw, 16px);
-            line-height: 1.4;
-            padding: 10px 0;
+
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: auto;
+            gap: 20px;
+            padding: 0 40px;
         }
 
-    
+        .card {
+            border: 1px solid $primary;
+            padding: 20px;
+            margin-bottom: 20px;
+
+            h3 {
+                font-size: clamp(16px, 6vw, 28px);
+                line-height: 1.4;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+
+            }
+
+            .entry-footer {
+                font-size: clamp(14px, 3vw, 16px);
+                line-height: 1.4;
+                padding: 10px 0;
+            }
+
+
+        }
+
     }
-    
 }
-}
+
 .mb-40 {
     margin-bottom: 40px;
 }
+
 .mb-80 {
     margin-bottom: 80px;
 }

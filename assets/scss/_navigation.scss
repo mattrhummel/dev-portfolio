@@ -29,17 +29,7 @@
         font-size: 1.2rem;
         column-gap: 15px;
     }
-    img.bio-photo {
-        max-width: 44px;
-        height: auto;
-        margin: 0 auto;
-        display: none;
 
-        @media (min-width: 768px) {
-            display: flex;
-        }
-
-    }
     button {
         display: inline-block;
         width: auto;
@@ -150,11 +140,16 @@
 }
  /*Social Links Styles*/
     .social-links {
-        margin: auto 0;
+        margin: auto;
         width: auto;
         display: flex;
         justify-content: center;
         
+        @media (min-width: 992px){
+            justify-content: start;
+
+        }
+  
         li {
             list-style: none;
             display: inline-block;
@@ -163,8 +158,8 @@
                 color: $primary;
                 transition: all 0.2s ease;
                 height: auto;
-                 padding: 0 14px;
-                 font-size: 32px;
+                 padding: 0 10px 0 0 ;
+                 font-size: 1.4rem;
                 &:hover {
                     color: $secondary;
 
