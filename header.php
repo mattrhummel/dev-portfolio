@@ -27,7 +27,8 @@
     <title><?php wp_title(''); ?></title>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <?php wp_head(); ?>
 </head>
 
@@ -36,41 +37,58 @@
 
     <a href="<?php esc_html_e('#main-content', 'dev-portfolio') ?>" class="skip"><?php _e('Skip to main content', 'dev-portfolio') ?></a>
 
-    <header class="nav-container" id="mainHeader">
-        <div class="container">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
 
+
+        <header class="banner-container">
+            
+           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
                 <span><?php bloginfo(); ?></span>
-
             </a>
 
-            <button href="javascript:void(0)" class="open-menu" onclick="openNav()" aria-label="menu-open">
-                <i class="fa-sharp fa-solid fa-bars"></i>
-            </button>
+               <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <span class='menu-button'></span>
+              </label>
 
-            <nav id="popOutMenu" class="main-menu">
-                        
-                    <button href="javascript:void(0)" class="close-button" onclick="closeNav()" aria-label="menu-close"> <i class="fa-solid fa-xmark"></i>
-                    </button>
+            <div class="menu-container">
 
-                    <div class="popout-container">
-
-    
-                        <?php
+            <nav class="nav-menu">
+              <?php
                         wp_nav_menu(
                             array(
                                 'theme_location' => 'menu-1',
                                 'menu_id'        => 'primary',
+                                'container'  => false,
+                                'menu_class' => 'menu'
                             )
                         );
                         ?>
 
-                    </div>
+<ul class="menu-social-links">
+                <li>
+                    <a href="<?php esc_html_e( 'https://github.com/mattrhummel', 'dev-portfolio' ) ?>"  title="Github">
+                        <i class="fa-brands fa-github-alt"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" title="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" title="Medium">
+                        <i class="fa-brands fa-medium"></i>
+                    </a>
+                </li>
+            </ul>
+              </div>
 
 
-
-
-            </nav>
         </div>
     </header>
 
