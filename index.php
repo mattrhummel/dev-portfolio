@@ -41,11 +41,6 @@ get_header();
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
                 </li>
-                <li>
-                    <a href="<?php esc_html_e( 'https://medium.com/@matthummel/list/reading-list', 'dev-portfolio' ) ?>" title="Medium">
-                        <i class="fa-brands fa-medium"></i>
-                    </a>
-                </li>
             </ul>
 
 				</div>
