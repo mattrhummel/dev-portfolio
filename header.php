@@ -36,8 +36,6 @@
 
     <a href="<?php esc_html_e('#main-content', 'dev-portfolio') ?>" class="skip"><?php _e('Skip to main content', 'dev-portfolio') ?></a>
 
-
-
         <header class="banner-container">
             
            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="logo">
