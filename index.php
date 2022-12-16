@@ -37,11 +37,6 @@ get_header();
                     </a>
                 </li>
                 <li>
-                    <a href="<?php esc_html_e( 'https://www.facebook.com/profile.php?id=100086489538676', 'dev-portfolio' ) ?>" title="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li>
                     <a href="<?php esc_html_e( 'https://www.linkedin.com/in/mattrhummel/', 'dev-portfolio' ) ?>" title="LinkedIn">
                         <i class="fa-brands fa-linkedin-in"></i>
                     </a>
