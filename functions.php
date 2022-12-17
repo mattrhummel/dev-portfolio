@@ -168,7 +168,6 @@ function dev_portfolio_scripts() {
 	wp_enqueue_style( 'dev-portfolio-style', get_template_directory_uri() . '/style.css', array(), _S_VERSION );
 	wp_style_add_data( 'dev-portfolio-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'dev-portfolio-navigation', get_template_directory_uri() . '/js/scripts.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'dev-portfolio-font-awesome', 'https://kit.fontawesome.com/280dc35507.js', array(),  false );
 }
 add_action( 'wp_enqueue_scripts', 'dev_portfolio_scripts' );
