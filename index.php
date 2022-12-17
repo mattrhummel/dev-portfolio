@@ -47,8 +47,8 @@ get_header();
 
 				<div class="col-2">
 
-				<img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt=""
-                    class="bio-photo" />
+				<img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt="matt hummel"
+                    class="bio-photo" width="300" height="300" />
 				</div>
 
 		</div>
