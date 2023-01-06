@@ -17,7 +17,7 @@ get_header();
 		 <header class="page-banner">
                 <h1><?php the_title(); ?></h1>
 				<p><?php dev_portfolio_entry_footer(); ?></p>
-        </header>
+         </header>
 
 
 

@@ -319,7 +319,7 @@ footer.page-footer {
       justify-items: center;
       width: 100%;
       height: 50vh;
-      padding: auto 0;
+      padding: auto;
 
       .container-block {
         margin: auto;
@@ -334,7 +334,7 @@ footer.page-footer {
     }
     p {
         line-height: 1.4;
-        margin-bottom: 0;
+        margin: auto;
     }
     .post-edit-link {
         display: block;
